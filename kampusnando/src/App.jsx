@@ -1,3 +1,4 @@
+import Mhs from './Mhs.jsx';
 
 function Contoh1(){
     return <div>
@@ -24,15 +25,9 @@ function Artikel(){
     </div>
 }
 
-function Nama({nama}){
-    return <h1>{nama}</h1>
-}
 
-function Nim({nim}){
-    return <h3>{nim}</h3>
-}
 
-function Mhs(){
+function List_Mhs(){
     const mahasiswa = [
         {
             nama: "Nando",
@@ -49,12 +44,9 @@ function Mhs(){
     ]
 
     return <div>
-        <Nama nama={mahasiswa[0].nama}/>
-        <Nim nim={mahasiswa[0].nim}/>
-        <Nama nama={mahasiswa[1].nama}/>
-        <Nim nim={mahasiswa[1].nim}/>
-        <Nama nama={mahasiswa[2].nama}/>
-        <Nim nim={mahasiswa[2].nim}/>
+        <Mhs mhs={mahasiswa[0]}/>
+        <Mhs mhs={mahasiswa[1]}/>
+        <Mhs mhs={mahasiswa[2]}/>
     </div>
 }
 
