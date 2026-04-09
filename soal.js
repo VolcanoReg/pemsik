@@ -38,3 +38,6 @@ mahasiswa = {
 
 //jawaban
 console.log(mahasiswa)
+
+
+//tampilkan 3 tabel dengan 1 data
