@@ -54,7 +54,7 @@ function App(){
     return <div>
         <h1>Halo dek </h1>
         <Artikel/>
-        <Mhs/>
+        <List_Mhs/>
     </div>
 }
 
