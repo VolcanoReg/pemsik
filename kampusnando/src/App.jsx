@@ -1,3 +1,5 @@
+import Mahasiswa from "@/Pages/Admin/Mahasiswa/Mahasiswa.jsx";
+
 function LoginForm(){
     return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
@@ -43,9 +45,8 @@ function LoginForm(){
 }
 
 function App(){
-    return (
-        <LoginForm/>
-    )
+    //return (<LoginForm/>)
+    return <Mahasiswa />
 }
 
 
