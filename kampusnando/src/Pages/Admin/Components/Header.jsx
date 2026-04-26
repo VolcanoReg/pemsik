@@ -1,4 +1,5 @@
 import Button from "@/Pages/Admin/Components/Button";
+import { confirmLogout } from "@/Utils/Helpers/SwalHelpers";
 
 const Header = () => {
   const toggleProfileMenu = () => {
@@ -27,8 +28,10 @@ const Header = () => {
             </a>
             <button
               onClick={() => {
-                localStorage.removeItem("user");
-                location.href = "/";
+                confirmLogout(() => {
+                  localStorage.removeItem("user");
+                  location.href = "/";
+                });
               }}
               className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
             >

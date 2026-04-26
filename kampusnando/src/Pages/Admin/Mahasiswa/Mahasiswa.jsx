@@ -10,6 +10,12 @@ import { mahasiswaList } from "@/Data/Dummy";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import {
+  confirmDelete,
+  confirmUpdate,
+} from "@/Utils/Helpers/SwalHelpers";
+
+import { toastSuccess } from "@/Utils/Helpers/ToastHelpers";
 
 
 
@@ -41,26 +47,31 @@ const Mahasiswa = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!form.nim || !form.nama) {
-      alert("NIM dan Nama wajib diisi");
-      return;
-    }
-
-    if (isEdit) {
-      updateMahasiswa(form.nim, form);
-    } else {
-      const exists = mahasiswa.find((m) => m.nim === form.nim);
-      if (exists) {
-        alert("NIM sudah terdaftar!");
+      e.preventDefault();
+      if (!form.nim || !form.nama) {
+        toastError("NIM dan Nama wajib diisi");
         return;
       }
-      addMahasiswa(form);
-    }
-
-    setForm({ nim: "", nama: "" });
-    setIsEdit(false);
-    setIsModalOpen(false);
+    
+      if (isEdit) {
+        confirmUpdate(() => {
+          updateMahasiswa(form.nim, form);
+          toastSuccess("Data berhasil diperbarui");
+          setForm({ nim: "", nama: "" });
+          setIsEdit(false);
+          setIsModalOpen(false);
+        });
+      } else {
+        const exists = mahasiswa.find((m) => m.nim === form.nim);
+        if (exists) {
+          toastError("NIM sudah terdaftar!");
+          return;
+        }
+        addMahasiswa(form);
+        toastSuccess("Data berhasil ditambahkan");
+        setForm({ nim: "", nama: "" });
+        setIsModalOpen(false);
+      }
   }
 
   const handleEdit = (mhs) => {
@@ -70,9 +81,10 @@ const Mahasiswa = () => {
   }
 
   const handleDelete = (nim) => {
-    if (confirm("Yakin ingin hapus data ini?")) {
+    confirmDelete(() => {
       deleteMahasiswa(nim);
-    }
+      toastSuccess("Data berhasil dihapus");
+    });
   }
 
   const addMahasiswa = (newData) => {

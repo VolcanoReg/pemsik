@@ -8,6 +8,7 @@ import Form from "@/Pages/Auth/Components/Form";
 
 import { dummyUser } from "@/Data/Dummy";
 import { useNavigate } from "react-router-dom";
+import { toastSuccess, toastError } from "@/Utils/Helpers/ToastHelpers";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -19,9 +20,13 @@ const Login = () => {
     if (email === dummyUser.email && password === dummyUser.password) {
       localStorage.setItem("user", JSON.stringify(dummyUser));
       //window.location.href = "/admin";
-      navigate("/admin/dashboard");
+      toastSuccess("Login berhasil!");
+      setTimeout(() => {
+        navigate("/admin/dashboard");
+      }, 2000);
     } else {
-      alert("Email atau password salah!");
+      //alert("Email atau password salah!");
+      toastError("Email atau password salah!");
     }
   };
 
