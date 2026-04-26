@@ -7,8 +7,10 @@ import Heading from "@/Pages/Auth/Components/Heading";
 import Form from "@/Pages/Auth/Components/Form";
 
 import { dummyUser } from "@/Data/Dummy";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -16,7 +18,8 @@ const Login = () => {
 
     if (email === dummyUser.email && password === dummyUser.password) {
       localStorage.setItem("user", JSON.stringify(dummyUser));
-      window.location.href = "/admin";
+      //window.location.href = "/admin";
+      navigate("/admin/dashboard");
     } else {
       alert("Email atau password salah!");
     }

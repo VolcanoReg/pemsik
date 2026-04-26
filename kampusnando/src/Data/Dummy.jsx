@@ -6,6 +6,7 @@ export const dummyUser = {
 };
 
 // Dummy data mahasiswa
+
 export const mahasiswaList = [
   {
     nim: "20211001",
