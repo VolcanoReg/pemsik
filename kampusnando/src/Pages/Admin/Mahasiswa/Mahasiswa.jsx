@@ -25,6 +25,29 @@ const Mahasiswa = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
 
+  const addMahasiswa = (newData) => {
+      setMahasiswa([...mahasiswa, newData]);
+  };
+
+  const updateMahasiswa = (nim, newData) => {
+    const updated = mahasiswa.map((mhs) => 
+      mhs.nim === nim ? {...mhs, ...newData} : mhs
+    );
+    setMahasiswa(updated);
+  };
+
+  const deleteMahasiswa = (nim) => {
+    const filtered = mahasiswa.filter((mhs) => mhs.nim !== nim);
+    setMahasiswa(filtered);
+  }
+
+  import {
+    getAllMahasiswa,
+    storeMahasiswa,
+    updateMahasiswa,
+    deleteMahasiswa,
+  } from "@/Utils/Apis/MahasiswaApi";
+
   const openAddModal = () => {
     setIsModalOpen(true);
     setForm({ nim: "", nama: "" });
@@ -33,9 +56,8 @@ const Mahasiswa = () => {
 
   const [mahasiswa, setMahasiswa] = useState([]);
 	const fetchMahasiswa = async () => {
-	  // bisa disimulasikan delay atau nanti diganti fetch API
-    setMahasiswa(mahasiswaList);
-	};
+    getAllMahasiswa().then((res) => setMahasiswa(res.data));
+  };
 
 	useEffect(() => {
     setTimeout(() => fetchMahasiswa(), 500);
@@ -67,7 +89,8 @@ const Mahasiswa = () => {
           toastError("NIM sudah terdaftar!");
           return;
         }
-        addMahasiswa(form);
+        //addMahasiswa(form);
+        storeMahasiswa(form);
         toastSuccess("Data berhasil ditambahkan");
         setForm({ nim: "", nama: "" });
         setIsModalOpen(false);
@@ -75,7 +98,7 @@ const Mahasiswa = () => {
   }
 
   const handleEdit = (mhs) => {
-    setForm({ nim: mhs.nim, nama: mhs.nama });
+    setForm({ id: mhs.id, nim: mhs.nim, nama: mhs.nama });
     setIsEdit(true);
     setIsModalOpen(true);
   }
@@ -87,21 +110,7 @@ const Mahasiswa = () => {
     });
   }
 
-  const addMahasiswa = (newData) => {
-      setMahasiswa([...mahasiswa, newData]);
-  };
-
-  const updateMahasiswa = (nim, newData) => {
-    const updated = mahasiswa.map((mhs) => 
-      mhs.nim === nim ? {...mhs, ...newData} : mhs
-    );
-    setMahasiswa(updated);
-  };
-
-  const deleteMahasiswa = (nim) => {
-    const filtered = mahasiswa.filter((mhs) => mhs.nim !== nim);
-    setMahasiswa(filtered);
-  }
+  
 
   return (
     
@@ -116,7 +125,7 @@ const Mahasiswa = () => {
         data={mahasiswa}
         onEdit={handleEdit}
         onDelete={handleDelete}
-        onDetail={(nim) => navigate(`/admin/mahasiswa/${nim}`)}
+        onDetail={(id) => navigate(`/admin/mahasiswa/${id}`)}
       />
     </Card>
 		

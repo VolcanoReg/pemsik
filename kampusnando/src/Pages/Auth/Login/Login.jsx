@@ -9,24 +9,37 @@ import Form from "@/Pages/Auth/Components/Form";
 import { dummyUser } from "@/Data/Dummy";
 import { useNavigate } from "react-router-dom";
 import { toastSuccess, toastError } from "@/Utils/Helpers/ToastHelpers";
+import { login } from "@/Utils/Apis/AuthApi";
 
 const Login = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    const password = e.target.password.value;
+    //e.preventDefault();
+    //const email = e.target.email.value;
+    //const password = e.target.password.value;
+    //
+    //if (email === dummyUser.email && password === dummyUser.password) {
+    //  localStorage.setItem("user", JSON.stringify(dummyUser));
+    //  //window.location.href = "/admin";
+    //  toastSuccess("Login berhasil!");
+    //  setTimeout(() => {
+    //    navigate("/admin/dashboard");
+    //  }, 2000);
+    //} else {
+    //  //alert("Email atau password salah!");
+    //  toastError("Email atau password salah!");
+    //}
 
-    if (email === dummyUser.email && password === dummyUser.password) {
-      localStorage.setItem("user", JSON.stringify(dummyUser));
-      //window.location.href = "/admin";
-      toastSuccess("Login berhasil!");
-      setTimeout(() => {
-        navigate("/admin/dashboard");
-      }, 2000);
-    } else {
-      //alert("Email atau password salah!");
-      toastError("Email atau password salah!");
+    e.preventDefault();
+    const { email, password } = form;
+
+    try {
+      const user = await login(email, password);
+      localStorage.setItem("user", JSON.stringify(user));
+      toastSuccess("Login berhasil");
+      navigate("/admin/dashboard");
+    } catch (err) {
+      toastError(err.message);
     }
   };
 

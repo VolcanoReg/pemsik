@@ -16,7 +16,9 @@ const MahasiswaTable = ({ data = [], onEdit, onDelete, onDetail }) => {
                         <td className="py-2 px-4">{mhs.nim}</td>
                         <td className="py-2 px-4">{mhs.nama}</td>
                         <td className="py-2 px-4 text-center space-x-2">
-                            <Button onClick={() => onDetail(mhs.nim)}>Detail</Button>
+                            <Button onClick={() => onDetail(mhs.nim)}>
+                                Detail
+                            </Button>
                             <Button size="sm" variant="warning" onClick={() => onEdit(mhs)}>
                                 Edit
                             </Button>
