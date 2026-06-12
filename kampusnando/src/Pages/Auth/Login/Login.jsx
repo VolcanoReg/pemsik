@@ -13,25 +13,11 @@ import { login } from "@/Utils/Apis/AuthApi";
 
 const Login = () => {
   const navigate = useNavigate();
-  const handleSubmit = (e) => {
-    //e.preventDefault();
-    //const email = e.target.email.value;
-    //const password = e.target.password.value;
-    //
-    //if (email === dummyUser.email && password === dummyUser.password) {
-    //  localStorage.setItem("user", JSON.stringify(dummyUser));
-    //  //window.location.href = "/admin";
-    //  toastSuccess("Login berhasil!");
-    //  setTimeout(() => {
-    //    navigate("/admin/dashboard");
-    //  }, 2000);
-    //} else {
-    //  //alert("Email atau password salah!");
-    //  toastError("Email atau password salah!");
-    //}
+  const handleSubmit = async (e) => {
 
     e.preventDefault();
-    const { email, password } = form;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
 
     try {
       const user = await login(email, password);
