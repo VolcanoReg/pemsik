@@ -6,7 +6,6 @@ import Label from "@/Pages/Admin/Components/Label";
 import MahasiswaTable from "@/Pages/Admin/Mahasiswa/MahasiswaTable";
 import MahasiswaModal from "@/Pages/Admin/Mahasiswa/MahasiswaModal";
 
-import { mahasiswaList } from "@/Data/Dummy";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -36,17 +35,17 @@ const Mahasiswa = () => {
     setMahasiswa([...mahasiswa, newData]);
   };
 
-  const updateMahasiswa = (nim, newData) => {
-    const updated = mahasiswa.map((mhs) =>
-      mhs.nim === nim ? { ...mhs, ...newData } : mhs
-    );
-    setMahasiswa(updated);
-  };
+  //const updateMahasiswa = (nim, newData) => {
+  //  const updated = mahasiswa.map((mhs) =>
+  //    mhs.nim === nim ? { ...mhs, ...newData } : mhs
+  //  );
+  //  setMahasiswa(updated);
+  //};
 
-  const deleteMahasiswa = (nim) => {
-    const filtered = mahasiswa.filter((mhs) => mhs.nim !== nim);
-    setMahasiswa(filtered);
-  }
+  //const deleteMahasiswa = (nim) => {
+  //  const filtered = mahasiswa.filter((mhs) => mhs.nim !== nim);
+  //  setMahasiswa(filtered);
+  //}
 
   const openAddModal = () => {
     setIsModalOpen(true);

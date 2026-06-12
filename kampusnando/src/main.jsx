@@ -16,8 +16,9 @@ import Login from "@/Pages/Auth/Login/Login";
 import Dashboard from "@/Pages/Admin/Dashboard/Dashboard";
 import Mahasiswa from "@/Pages/Admin/Mahasiswa/Mahasiswa";
 import MahasiswaDetail from "@/Pages/Admin/MahasiswaDetail/MahasiswaDetail";
+import Dosen from "@/Pages/Admin/Dosen/Dosen";
+import DosenDetail from "@/Pages/Admin/DosenDetail/DosenDetail";
 import PageNotFound from "@/Pages/Error/PageNotFound";
-
 
 const router = createBrowserRouter([
   {
@@ -60,8 +61,17 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "mahasiswa/:nim",
-        element: <MahasiswaDetail />,
+        path: "dosen",
+        children: [
+          {
+            index: true,
+            element: <Dosen />,
+          },
+          {
+            path: ":id",
+            element: <DosenDetail />,
+          },
+        ],
       },
     ],
   },
@@ -71,13 +81,9 @@ const router = createBrowserRouter([
   },
 ]);
 
-<React.StrictMode>
-  <Toaster position="top-right" />
-  <RouterProvider router={router} />
-</React.StrictMode>
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <Toaster position="top-right" />
     <RouterProvider router={router} />
   </React.StrictMode>,
 );

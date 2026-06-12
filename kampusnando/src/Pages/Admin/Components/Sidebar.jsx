@@ -10,8 +10,7 @@ const Sidebar = () => {
         <NavLink
           to="/admin/dashboard"
           className={({ isActive }) =>
-            `flex items-center space-x-2 px-4 py-2 rounded ${
-              isActive ? "bg-blue-700" : "hover:bg-blue-700"
+            `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
             }`
           }
         >
@@ -21,13 +20,22 @@ const Sidebar = () => {
         <NavLink
           to="/admin/mahasiswa"
           className={({ isActive }) =>
-            `flex items-center space-x-2 px-4 py-2 rounded ${
-              isActive ? "bg-blue-700" : "hover:bg-blue-700"
+            `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
             }`
           }
         >
           <span>🎓</span>
           <span className="menu-text hidden lg:inline">Mahasiswa</span>
+        </NavLink>
+        <NavLink
+          to="/admin/dosen"
+          className={({ isActive }) =>
+            `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+            }`
+          }
+        >
+          <span>🎓</span>
+          <span className="menu-text hidden lg:inline">Dosen</span>
         </NavLink>
       </nav>
     </aside>

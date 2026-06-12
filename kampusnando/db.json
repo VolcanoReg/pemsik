@@ -1,28 +1,46 @@
 {
+  "dosen": [
+    {
+      "id": "1",
+      "nama": "Dr. Budi Santoso",
+      "nidn": "0601018101"
+    },
+    {
+      "id": "2",
+      "nama": "Prof. Siti Aminah",
+      "nidn": "0602028202"
+    },
+    {
+      "id": "3",
+      "nama": "Eko Prasetyo, M.Kom.",
+      "nidn": "0603038303"
+    }
+  ],
   "mahasiswa": [
     {
-      "id": 1,
+      "id": "1",
       "nama": "Andi",
       "nim": "A11.2020.00001"
     },
     {
-      "id": 2,
+      "id": "2",
       "nama": "Budi",
       "nim": "A11.2020.00002"
     }
   ],
   "user": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Admin 1",
       "email": "admin@mail.com",
       "password": "admin123"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Mahasiswa 1",
       "email": "mahasiswa@mail.com",
       "password": "mahasiswa123"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
