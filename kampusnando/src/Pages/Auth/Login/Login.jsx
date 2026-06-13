@@ -11,17 +11,20 @@ import { useNavigate } from "react-router-dom";
 import { toastSuccess, toastError } from "@/Utils/Helpers/ToastHelpers";
 import { login } from "@/Utils/Apis/AuthApi";
 
+import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
+
 const Login = () => {
   const navigate = useNavigate();
-  const handleSubmit = async (e) => {
+  const { setUser } = useAuthStateContext();
 
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
 
     try {
       const user = await login(email, password);
-      localStorage.setItem("user", JSON.stringify(user));
+      setUser(user);
       toastSuccess("Login berhasil");
       navigate("/admin/dashboard");
     } catch (err) {

@@ -1,6 +1,11 @@
 import Button from "@/Pages/Admin/Components/Button";
+import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
 
 const MahasiswaTable = ({ data = [], onEdit, onDelete, onDetail }) => {
+    const { user } = useAuthStateContext();
+    const canUpdate = user?.permission?.includes("mahasiswa.update");
+    const canDelete = user?.permission?.includes("mahasiswa.delete");
+
     return (
         <table className="w-full text-sm text-gray-700">
             <thead className="bg-blue-600 text-white">
@@ -19,12 +24,16 @@ const MahasiswaTable = ({ data = [], onEdit, onDelete, onDetail }) => {
                             <Button onClick={() => onDetail(mhs.id)}>
                                 Detail
                             </Button>
-                            <Button size="sm" variant="warning" onClick={() => onEdit(mhs)}>
-                                Edit
-                            </Button>
-                            <Button size="sm" variant="danger" onClick={() => onDelete(mhs.id)}>
-                                Hapus
-                            </Button>
+                            {canUpdate && (
+                                <Button size="sm" variant="warning" onClick={() => onEdit(mhs)}>
+                                    Edit
+                                </Button>
+                            )}
+                            {canDelete && (
+                                <Button size="sm" variant="danger" onClick={() => onDelete(mhs.id)}>
+                                    Hapus
+                                </Button>
+                            )}
                         </td>
                     </tr>
                 ))}

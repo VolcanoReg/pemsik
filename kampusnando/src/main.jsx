@@ -4,6 +4,7 @@ import {
   Navigate,
   createBrowserRouter,
   RouterProvider,
+  Outlet,
 } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
@@ -18,7 +19,10 @@ import Mahasiswa from "@/Pages/Admin/Mahasiswa/Mahasiswa";
 import MahasiswaDetail from "@/Pages/Admin/MahasiswaDetail/MahasiswaDetail";
 import Dosen from "@/Pages/Admin/Dosen/Dosen";
 import DosenDetail from "@/Pages/Admin/DosenDetail/DosenDetail";
+import UserManagement from "@/Pages/Admin/User/UserManagement";
 import PageNotFound from "@/Pages/Error/PageNotFound";
+import Unauthorized from "@/Pages/Error/Unauthorized";
+import { AuthProvider } from "@/Utils/Contexts/AuthContext";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +53,11 @@ const router = createBrowserRouter([
       },
       {
         path: "mahasiswa",
+        element: (
+          <ProtectedRoute requiredPermission="mahasiswa.read">
+            <Outlet />
+          </ProtectedRoute>
+        ),
         children: [
           {
             index: true,
@@ -62,6 +71,11 @@ const router = createBrowserRouter([
       },
       {
         path: "dosen",
+        element: (
+          <ProtectedRoute requiredPermission="dosen.read">
+            <Outlet />
+          </ProtectedRoute>
+        ),
         children: [
           {
             index: true,
@@ -73,7 +87,19 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: "users",
+        element: (
+          <ProtectedRoute requiredPermission="users.manage">
+            <UserManagement />
+          </ProtectedRoute>
+        ),
+      },
     ],
+  },
+  {
+    path: "/unauthorized",
+    element: <Unauthorized />,
   },
   {
     path: "*",
@@ -83,7 +109,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Toaster position="top-right" />
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <Toaster position="top-right" />
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 );

@@ -1,14 +1,31 @@
 [
-    {
-        "id": 1,
-        "name": "Admin 1",
-        "email": "admin@mail.com",
-        "password": "admin123"
-    },
-    {
-        "id": 2,
-        "name": "Mahasiswa 1",
-        "email": "mahasiswa@mail.com",
-        "password": "mahasiswa123"
-    }
+  {
+    "id": "1",
+    "name": "Admin 1",
+    "email": "admin@mail.com",
+    "password": "admin123",
+    "role": "Admin",
+    "permission": [
+      "mahasiswa.create",
+      "mahasiswa.read",
+      "mahasiswa.update",
+      "mahasiswa.delete",
+      "dosen.create",
+      "dosen.read",
+      "dosen.update",
+      "dosen.delete",
+      "users.manage"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Mahasiswa 1",
+    "email": "mahasiswa@mail.com",
+    "password": "mahasiswa123",
+    "role": "Mahasiswa",
+    "permission": [
+      "mahasiswa.read",
+      "dosen.read"
+    ]
+  }
 ]

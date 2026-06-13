@@ -15,12 +15,17 @@ import {
   deleteDosen,
 } from "@/Utils/Apis/DosenApi";
 
+import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
+
 const Dosen = () => {
   const navigate = useNavigate();
+  const { user } = useAuthStateContext();
   const [form, setForm] = useState({ nidn: "", nama: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [dosen, setDosen] = useState([]);
+
+  const canCreate = user?.permission?.includes("dosen.create");
 
   const fetchDosen = async () => {
     try {
@@ -102,7 +107,7 @@ const Dosen = () => {
       <Card>
         <div className="flex justify-between items-center mb-4">
           <Heading as="h2" className="mb-0 text-left">Daftar Dosen</Heading>
-          <Button onClick={() => openAddModal()}>+ Tambah Dosen</Button>
+          {canCreate && <Button onClick={() => openAddModal()}>+ Tambah Dosen</Button>}
         </div>
 
         <DosenTable

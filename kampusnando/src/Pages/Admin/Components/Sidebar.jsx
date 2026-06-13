@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
+import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
 
 const Sidebar = () => {
+  const { user } = useAuthStateContext();
+
+  const hasPermission = (perm) => {
+    return user?.permission?.includes(perm);
+  };
+
   return (
     <aside className="bg-blue-800 text-white min-h-screen transition-all duration-300 w-20 lg:w-64">
       <div className="p-4 border-b border-blue-700">
@@ -17,26 +24,45 @@ const Sidebar = () => {
           <span>🏠</span>
           <span className="menu-text hidden lg:inline">Dashboard</span>
         </NavLink>
-        <NavLink
-          to="/admin/mahasiswa"
-          className={({ isActive }) =>
-            `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
-            }`
-          }
-        >
-          <span>🎓</span>
-          <span className="menu-text hidden lg:inline">Mahasiswa</span>
-        </NavLink>
-        <NavLink
-          to="/admin/dosen"
-          className={({ isActive }) =>
-            `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
-            }`
-          }
-        >
-          <span>🎓</span>
-          <span className="menu-text hidden lg:inline">Dosen</span>
-        </NavLink>
+
+        {hasPermission("mahasiswa.read") && (
+          <NavLink
+            to="/admin/mahasiswa"
+            className={({ isActive }) =>
+              `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+              }`
+            }
+          >
+            <span>🎓</span>
+            <span className="menu-text hidden lg:inline">Mahasiswa</span>
+          </NavLink>
+        )}
+
+        {hasPermission("dosen.read") && (
+          <NavLink
+            to="/admin/dosen"
+            className={({ isActive }) =>
+              `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+              }`
+            }
+          >
+            <span>🎓</span>
+            <span className="menu-text hidden lg:inline">Dosen</span>
+          </NavLink>
+        )}
+
+        {hasPermission("users.manage") && (
+          <NavLink
+            to="/admin/users"
+            className={({ isActive }) =>
+              `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+              }`
+            }
+          >
+            <span>👤</span>
+            <span className="menu-text hidden lg:inline">User Management</span>
+          </NavLink>
+        )}
       </nav>
     </aside>
   );

@@ -25,12 +25,17 @@ import {
 
 
 
+import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
+
 const Mahasiswa = () => {
   const navigate = useNavigate();
+  const { user } = useAuthStateContext();
   const [form, setForm] = useState({ nim: "", nama: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
 
+  const canCreate = user?.permission?.includes("mahasiswa.create");
+  
   const addMahasiswa = (newData) => {
     setMahasiswa([...mahasiswa, newData]);
   };
@@ -117,7 +122,7 @@ const Mahasiswa = () => {
       <Card>
         <div className="flex justify-between items-center mb-4">
           <Heading as="h2" className="mb-0 text-left">Daftar Mahasiswa</Heading>
-          <Button onClick={() => openAddModal()}>+ Tambah Mahasiswa</Button>
+          {canCreate && <Button onClick={() => openAddModal()}>+ Tambah Mahasiswa</Button>}
         </div>
 
         <MahasiswaTable

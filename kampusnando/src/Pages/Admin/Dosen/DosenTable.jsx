@@ -1,6 +1,11 @@
 import Button from "@/Pages/Admin/Components/Button";
+import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
 
 const DosenTable = ({ data = [], onEdit, onDelete, onDetail }) => {
+    const { user } = useAuthStateContext();
+    const canUpdate = user?.permission?.includes("dosen.update");
+    const canDelete = user?.permission?.includes("dosen.delete");
+
     return (
         <table className="w-full text-sm text-gray-700">
             <thead className="bg-blue-600 text-white">
@@ -19,12 +24,16 @@ const DosenTable = ({ data = [], onEdit, onDelete, onDetail }) => {
                             <Button onClick={() => onDetail(dsn.id || dsn.nidn)}>
                                 Detail
                             </Button>
-                            <Button size="sm" variant="warning" onClick={() => onEdit(dsn)}>
-                                Edit
-                            </Button>
-                            <Button size="sm" variant="danger" onClick={() => onDelete(dsn.id || dsn.nidn)}>
-                                Hapus
-                            </Button>
+                            {canUpdate && (
+                                <Button size="sm" variant="warning" onClick={() => onEdit(dsn)}>
+                                    Edit
+                                </Button>
+                            )}
+                            {canDelete && (
+                                <Button size="sm" variant="danger" onClick={() => onDelete(dsn.id || dsn.nidn)}>
+                                    Hapus
+                                </Button>
+                            )}
                         </td>
                     </tr>
                 ))}
