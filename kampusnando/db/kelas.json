@@ -10,5 +10,305 @@
     "nama": "A11.4402",
     "matakuliahId": 2,
     "dosenId": 2
+  },
+  {
+    "id": 3,
+    "nama": "A11.4403",
+    "matakuliahId": 16,
+    "dosenId": 34
+  },
+  {
+    "id": 4,
+    "nama": "A11.4404",
+    "matakuliahId": 41,
+    "dosenId": 25
+  },
+  {
+    "id": 5,
+    "nama": "A11.4405",
+    "matakuliahId": 28,
+    "dosenId": 38
+  },
+  {
+    "id": 6,
+    "nama": "A11.4406",
+    "matakuliahId": 45,
+    "dosenId": 11
+  },
+  {
+    "id": 7,
+    "nama": "A11.4407",
+    "matakuliahId": 20,
+    "dosenId": 20
+  },
+  {
+    "id": 8,
+    "nama": "A11.4408",
+    "matakuliahId": 24,
+    "dosenId": 38
+  },
+  {
+    "id": 9,
+    "nama": "A11.4409",
+    "matakuliahId": 48,
+    "dosenId": 25
+  },
+  {
+    "id": 10,
+    "nama": "A11.4410",
+    "matakuliahId": 12,
+    "dosenId": 24
+  },
+  {
+    "id": 11,
+    "nama": "A11.4411",
+    "matakuliahId": 32,
+    "dosenId": 3
+  },
+  {
+    "id": 12,
+    "nama": "A11.4412",
+    "matakuliahId": 52,
+    "dosenId": 49
+  },
+  {
+    "id": 13,
+    "nama": "A11.4413",
+    "matakuliahId": 12,
+    "dosenId": 26
+  },
+  {
+    "id": 14,
+    "nama": "A11.4414",
+    "matakuliahId": 47,
+    "dosenId": 32
+  },
+  {
+    "id": 15,
+    "nama": "A11.4415",
+    "matakuliahId": 15,
+    "dosenId": 18
+  },
+  {
+    "id": 16,
+    "nama": "A11.4416",
+    "matakuliahId": 32,
+    "dosenId": 33
+  },
+  {
+    "id": 17,
+    "nama": "A11.4417",
+    "matakuliahId": 23,
+    "dosenId": 4
+  },
+  {
+    "id": 18,
+    "nama": "A11.4418",
+    "matakuliahId": 45,
+    "dosenId": 37
+  },
+  {
+    "id": 19,
+    "nama": "A11.4419",
+    "matakuliahId": 10,
+    "dosenId": 35
+  },
+  {
+    "id": 20,
+    "nama": "A11.4420",
+    "matakuliahId": 7,
+    "dosenId": 43
+  },
+  {
+    "id": 21,
+    "nama": "A11.4421",
+    "matakuliahId": 11,
+    "dosenId": 23
+  },
+  {
+    "id": 22,
+    "nama": "A11.4422",
+    "matakuliahId": 34,
+    "dosenId": 6
+  },
+  {
+    "id": 23,
+    "nama": "A11.4423",
+    "matakuliahId": 22,
+    "dosenId": 4
+  },
+  {
+    "id": 24,
+    "nama": "A11.4424",
+    "matakuliahId": 26,
+    "dosenId": 35
+  },
+  {
+    "id": 25,
+    "nama": "A11.4425",
+    "matakuliahId": 50,
+    "dosenId": 32
+  },
+  {
+    "id": 26,
+    "nama": "A11.4426",
+    "matakuliahId": 18,
+    "dosenId": 7
+  },
+  {
+    "id": 27,
+    "nama": "A11.4427",
+    "matakuliahId": 19,
+    "dosenId": 7
+  },
+  {
+    "id": 28,
+    "nama": "A11.4428",
+    "matakuliahId": 32,
+    "dosenId": 6
+  },
+  {
+    "id": 29,
+    "nama": "A11.4429",
+    "matakuliahId": 19,
+    "dosenId": 30
+  },
+  {
+    "id": 30,
+    "nama": "A11.4430",
+    "matakuliahId": 49,
+    "dosenId": 7
+  },
+  {
+    "id": 31,
+    "nama": "A11.4431",
+    "matakuliahId": 41,
+    "dosenId": 41
+  },
+  {
+    "id": 32,
+    "nama": "A11.4432",
+    "matakuliahId": 47,
+    "dosenId": 18
+  },
+  {
+    "id": 33,
+    "nama": "A11.4433",
+    "matakuliahId": 21,
+    "dosenId": 42
+  },
+  {
+    "id": 34,
+    "nama": "A11.4434",
+    "matakuliahId": 34,
+    "dosenId": 15
+  },
+  {
+    "id": 35,
+    "nama": "A11.4435",
+    "matakuliahId": 14,
+    "dosenId": 17
+  },
+  {
+    "id": 36,
+    "nama": "A11.4436",
+    "matakuliahId": 20,
+    "dosenId": 25
+  },
+  {
+    "id": 37,
+    "nama": "A11.4437",
+    "matakuliahId": 30,
+    "dosenId": 17
+  },
+  {
+    "id": 38,
+    "nama": "A11.4438",
+    "matakuliahId": 34,
+    "dosenId": 27
+  },
+  {
+    "id": 39,
+    "nama": "A11.4439",
+    "matakuliahId": 27,
+    "dosenId": 41
+  },
+  {
+    "id": 40,
+    "nama": "A11.4440",
+    "matakuliahId": 31,
+    "dosenId": 3
+  },
+  {
+    "id": 41,
+    "nama": "A11.4441",
+    "matakuliahId": 30,
+    "dosenId": 51
+  },
+  {
+    "id": 42,
+    "nama": "A11.4442",
+    "matakuliahId": 39,
+    "dosenId": 32
+  },
+  {
+    "id": 43,
+    "nama": "A11.4443",
+    "matakuliahId": 45,
+    "dosenId": 51
+  },
+  {
+    "id": 44,
+    "nama": "A11.4444",
+    "matakuliahId": 30,
+    "dosenId": 49
+  },
+  {
+    "id": 45,
+    "nama": "A11.4445",
+    "matakuliahId": 4,
+    "dosenId": 32
+  },
+  {
+    "id": 46,
+    "nama": "A11.4446",
+    "matakuliahId": 43,
+    "dosenId": 36
+  },
+  {
+    "id": 47,
+    "nama": "A11.4447",
+    "matakuliahId": 45,
+    "dosenId": 29
+  },
+  {
+    "id": 48,
+    "nama": "A11.4448",
+    "matakuliahId": 18,
+    "dosenId": 15
+  },
+  {
+    "id": 49,
+    "nama": "A11.4449",
+    "matakuliahId": 24,
+    "dosenId": 1
+  },
+  {
+    "id": 50,
+    "nama": "A11.4450",
+    "matakuliahId": 5,
+    "dosenId": 26
+  },
+  {
+    "id": 51,
+    "nama": "A11.4451",
+    "matakuliahId": 44,
+    "dosenId": 9
+  },
+  {
+    "id": 52,
+    "nama": "A11.4452",
+    "matakuliahId": 4,
+    "dosenId": 40
   }
 ]
