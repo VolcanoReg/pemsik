@@ -6,11 +6,15 @@ import {
   deleteMahasiswa,
 } from "@/Utils/Apis/MahasiswaApi";
 
-export const useMahasiswa = () => {
+export const useMahasiswa = (queryParams = {}) => {
   return useQuery({
-    queryKey: ["mahasiswa"],
-    queryFn: getAllMahasiswa,
-    select: (res) => res?.data ?? [],
+    queryKey: ["mahasiswa", queryParams],
+    queryFn: () => getAllMahasiswa(queryParams),
+    select: (res) => ({
+      data: res?.data ?? [],
+      total: parseInt(res.headers["x-total-count"] ?? "0", 10),
+    }),
+    placeholderData: (prev) => prev,
   });
 };
 
