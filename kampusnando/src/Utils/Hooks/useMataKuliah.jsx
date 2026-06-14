@@ -6,11 +6,15 @@ import {
   deleteMataKuliah,
 } from "@/Utils/Apis/MataKuliahApi";
 
-export const useMataKuliah = () => {
+export const useMataKuliah = (queryParams = {}) => {
   return useQuery({
-    queryKey: ["matakuliah"],
-    queryFn: getAllMataKuliah,
-    select: (res) => res?.data ?? [],
+    queryKey: ["matakuliah", queryParams],
+    queryFn: () => getAllMataKuliah(queryParams),
+    select: (res) => ({
+      data: res?.data ?? [],
+      total: parseInt(res.headers["x-total-count"] ?? "0", 10),
+    }),
+    placeholderData: (prev) => prev,
   });
 };
 

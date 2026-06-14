@@ -6,11 +6,15 @@ import {
   deleteDosen,
 } from "@/Utils/Apis/DosenApi";
 
-export const useDosen = () => {
+export const useDosen = (queryParams = {}) => {
   return useQuery({
-    queryKey: ["dosen"],
-    queryFn: getAllDosen,
-    select: (res) => res?.data ?? [],
+    queryKey: ["dosen", queryParams],
+    queryFn: () => getAllDosen(queryParams),
+    select: (res) => ({
+      data: res?.data ?? [],
+      total: parseInt(res.headers["x-total-count"] ?? "0", 10),
+    }),
+    placeholderData: (prev) => prev,
   });
 };
 

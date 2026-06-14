@@ -6,11 +6,15 @@ import {
   deleteKelas,
 } from "@/Utils/Apis/KelasApi";
 
-export const useKelas = () => {
+export const useKelas = (queryParams = {}) => {
   return useQuery({
-    queryKey: ["kelas"],
-    queryFn: getAllKelas,
-    select: (res) => res?.data ?? [],
+    queryKey: ["kelas", queryParams],
+    queryFn: () => getAllKelas(queryParams),
+    select: (res) => ({
+      data: res?.data ?? [],
+      total: parseInt(res.headers["x-total-count"] ?? "0", 10),
+    }),
+    placeholderData: (prev) => prev,
   });
 };
 

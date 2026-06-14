@@ -1,7 +1,7 @@
 import axios from "@/Utils/AxiosInstance";
 
 // Ambil semua dosen
-export const getAllDosen = () => axios.get("/dosen");
+export const getAllDosen = (params = {}) => axios.get("/dosen", { params });
 
 // Ambil 1 dosen
 export const getDosen = (id) => axios.get(`/dosen/${id}`);
