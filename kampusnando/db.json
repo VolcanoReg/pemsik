@@ -1,29 +1,29 @@
 {
   "dosen": [
     {
-      "id": "1",
+      "id": 1,
       "nama": "Dr. Budi Santoso",
       "nidn": "0601018101"
     },
     {
-      "id": "2",
+      "id": 2,
       "nama": "Prof. Siti Aminah",
       "nidn": "0602028202"
     },
     {
-      "id": "3",
+      "id": 3,
       "nama": "Eko Prasetyo, M.Kom.",
       "nidn": "0603038303"
     }
   ],
   "mahasiswa": [
     {
-      "id": "1",
+      "id": 1,
       "nama": "Andi",
       "nim": "A11.2020.00001"
     },
     {
-      "id": "2",
+      "id": 2,
       "nama": "Budi",
       "nim": "A11.2020.00002"
     }
@@ -58,6 +58,5 @@
         "dosen.read"
       ]
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

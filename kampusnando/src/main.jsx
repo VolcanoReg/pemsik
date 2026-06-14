@@ -7,6 +7,8 @@ import {
   Outlet,
 } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import "./App.css";
 import AuthLayout from "@/Pages/Auth/AuthLayout";
@@ -23,6 +25,8 @@ import UserManagement from "@/Pages/Admin/User/UserManagement";
 import PageNotFound from "@/Pages/Error/PageNotFound";
 import Unauthorized from "@/Pages/Error/Unauthorized";
 import { AuthProvider } from "@/Utils/Contexts/AuthContext";
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -109,9 +113,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AuthProvider>
-      <Toaster position="top-right" />
-      <RouterProvider router={router} />
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <Toaster position="top-right" />
+        <RouterProvider router={router} />
+      </AuthProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   </React.StrictMode>,
 );
