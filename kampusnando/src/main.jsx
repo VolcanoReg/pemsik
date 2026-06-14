@@ -21,6 +21,8 @@ import Mahasiswa from "@/Pages/Admin/Mahasiswa/Mahasiswa";
 import MahasiswaDetail from "@/Pages/Admin/MahasiswaDetail/MahasiswaDetail";
 import Dosen from "@/Pages/Admin/Dosen/Dosen";
 import DosenDetail from "@/Pages/Admin/DosenDetail/DosenDetail";
+import MataKuliah from "@/Pages/Admin/MataKuliah/MataKuliah";
+import Kelas from "@/Pages/Admin/Kelas/Kelas";
 import UserManagement from "@/Pages/Admin/User/UserManagement";
 import PageNotFound from "@/Pages/Error/PageNotFound";
 import Unauthorized from "@/Pages/Error/Unauthorized";
@@ -90,6 +92,22 @@ const router = createBrowserRouter([
             element: <DosenDetail />,
           },
         ],
+      },
+      {
+        path: "matakuliah",
+        element: (
+          <ProtectedRoute requiredPermission="matakuliah.read">
+            <MataKuliah />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "kelas",
+        element: (
+          <ProtectedRoute requiredPermission="kelas.read">
+            <Kelas />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "users",

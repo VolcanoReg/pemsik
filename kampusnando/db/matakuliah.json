@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "kode": "A11.05401",
+    "nama": "Pemrograman Sisi Klien",
+    "sks": 3
+  },
+  {
+    "id": 2,
+    "kode": "A11.05402",
+    "nama": "Rekayasa Perangkat Lunak",
+    "sks": 4
+  },
+  {
+    "id": 3,
+    "kode": "A11.05403",
+    "nama": "Kriptografi",
+    "sks": 2
+  }
+]

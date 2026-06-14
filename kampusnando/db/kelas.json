@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nama": "A11.4401",
+    "matakuliahId": 1,
+    "dosenId": 1
+  },
+  {
+    "id": 2,
+    "nama": "A11.4402",
+    "matakuliahId": 2,
+    "dosenId": 2
+  }
+]

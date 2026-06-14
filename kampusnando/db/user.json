@@ -14,7 +14,15 @@
       "dosen.read",
       "dosen.update",
       "dosen.delete",
-      "users.manage"
+      "users.manage",
+      "matakuliah.create",
+      "matakuliah.read",
+      "matakuliah.update",
+      "matakuliah.delete",
+      "kelas.create",
+      "kelas.read",
+      "kelas.update",
+      "kelas.delete"
     ]
   },
   {
@@ -25,7 +33,9 @@
     "role": "Mahasiswa",
     "permission": [
       "mahasiswa.read",
-      "dosen.read"
+      "dosen.read",
+      "matakuliah.read",
+      "kelas.read"
     ]
   }
 ]

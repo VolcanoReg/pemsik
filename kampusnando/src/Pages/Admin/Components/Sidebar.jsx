@@ -51,6 +51,32 @@ const Sidebar = () => {
           </NavLink>
         )}
 
+        {hasPermission("matakuliah.read") && (
+          <NavLink
+            to="/admin/matakuliah"
+            className={({ isActive }) =>
+              `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+              }`
+            }
+          >
+            <span>📚</span>
+            <span className="menu-text hidden lg:inline">Mata Kuliah</span>
+          </NavLink>
+        )}
+
+        {hasPermission("kelas.read") && (
+          <NavLink
+            to="/admin/kelas"
+            className={({ isActive }) =>
+              `flex items-center space-x-2 px-4 py-2 rounded ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+              }`
+            }
+          >
+            <span>🏫</span>
+            <span className="menu-text hidden lg:inline">Kelas</span>
+          </NavLink>
+        )}
+
         {hasPermission("users.manage") && (
           <NavLink
             to="/admin/users"

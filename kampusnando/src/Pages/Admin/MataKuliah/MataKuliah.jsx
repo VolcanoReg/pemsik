@@ -1,38 +1,35 @@
+import { useState } from "react";
 import Card from "@/Pages/Admin/Components/Card";
 import Heading from "@/Pages/Admin/Components/Heading";
 import Button from "@/Pages/Admin/Components/Button";
-import DosenTable from "@/Pages/Admin/Dosen/DosenTable";
-import DosenModal from "@/Pages/Admin/Dosen/DosenModal";
-
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import MataKuliahTable from "@/Pages/Admin/MataKuliah/MataKuliahTable";
+import MataKuliahModal from "@/Pages/Admin/MataKuliah/MataKuliahModal";
 import { confirmDelete, confirmUpdate } from "@/Utils/Helpers/SwalHelpers";
 import { toastSuccess, toastError } from "@/Utils/Helpers/ToastHelpers";
 import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
 import {
-  useDosen,
-  useStoreDosen,
-  useUpdateDosen,
-  useDeleteDosen,
-} from "@/Utils/Hooks/useDosen";
+  useMataKuliah,
+  useStoreMataKuliah,
+  useUpdateMataKuliah,
+  useDeleteMataKuliah,
+} from "@/Utils/Hooks/useMataKuliah";
 
-const Dosen = () => {
-  const navigate = useNavigate();
+const MataKuliah = () => {
   const { user } = useAuthStateContext();
-  const [form, setForm] = useState({ id: "", nidn: "", nama: "" });
+  const [form, setForm] = useState({ id: "", kode: "", nama: "", sks: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
 
-  const canCreate = user?.permission?.includes("dosen.create");
+  const canCreate = user?.permission?.includes("matakuliah.create");
 
-  const { data: dosenList = [], isLoading, isError } = useDosen();
-  const { mutate: addDosen } = useStoreDosen();
-  const { mutate: editDosen } = useUpdateDosen();
-  const { mutate: removeDosen } = useDeleteDosen();
+  const { data: mataKuliahList = [], isLoading, isError } = useMataKuliah();
+  const { mutate: addMataKuliah } = useStoreMataKuliah();
+  const { mutate: editMataKuliah } = useUpdateMataKuliah();
+  const { mutate: removeMataKuliah } = useDeleteMataKuliah();
 
   const openAddModal = () => {
     setIsModalOpen(true);
-    setForm({ id: "", nidn: "", nama: "" });
+    setForm({ id: "", kode: "", nama: "", sks: "" });
     setIsEdit(false);
   };
 
@@ -42,19 +39,24 @@ const Dosen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.nidn || !form.nama) {
-      toastError("NIDN dan Nama wajib diisi");
+    if (!form.kode || !form.nama || !form.sks) {
+      toastError("Semua field wajib diisi");
       return;
     }
 
+    const payload = {
+      ...form,
+      sks: parseInt(form.sks, 10),
+    };
+
     if (isEdit) {
       confirmUpdate(() => {
-        editDosen(
-          { id: form.id, data: form },
+        editMataKuliah(
+          { id: form.id, data: payload },
           {
             onSuccess: () => {
-              toastSuccess("Data berhasil diperbarui");
-              setForm({ id: "", nidn: "", nama: "" });
+              toastSuccess("Mata kuliah berhasil diperbarui");
+              setForm({ id: "", kode: "", nama: "", sks: "" });
               setIsEdit(false);
               setIsModalOpen(false);
             },
@@ -65,15 +67,15 @@ const Dosen = () => {
         );
       });
     } else {
-      const exists = dosenList.find((d) => d.nidn === form.nidn);
+      const exists = mataKuliahList.find((mk) => mk.kode === form.kode);
       if (exists) {
-        toastError("NIDN sudah terdaftar!");
+        toastError("Kode MK sudah terdaftar!");
         return;
       }
-      addDosen(form, {
+      addMataKuliah(payload, {
         onSuccess: () => {
-          toastSuccess("Data berhasil ditambahkan");
-          setForm({ id: "", nidn: "", nama: "" });
+          toastSuccess("Mata kuliah berhasil ditambahkan");
+          setForm({ id: "", kode: "", nama: "", sks: "" });
           setIsModalOpen(false);
         },
         onError: (err) => {
@@ -83,17 +85,17 @@ const Dosen = () => {
     }
   };
 
-  const handleEdit = (dsn) => {
-    setForm({ id: dsn.id, nidn: dsn.nidn, nama: dsn.nama });
+  const handleEdit = (mk) => {
+    setForm({ id: mk.id, kode: mk.kode, nama: mk.nama, sks: mk.sks });
     setIsEdit(true);
     setIsModalOpen(true);
   };
 
   const handleDelete = (id) => {
     confirmDelete(() => {
-      removeDosen(id, {
+      removeMataKuliah(id, {
         onSuccess: () => {
-          toastSuccess("Data berhasil dihapus");
+          toastSuccess("Mata kuliah berhasil dihapus");
         },
         onError: (err) => {
           toastError("Gagal menghapus data: " + err.message);
@@ -106,8 +108,8 @@ const Dosen = () => {
     <>
       <Card>
         <div className="flex justify-between items-center mb-4">
-          <Heading as="h2" className="mb-0 text-left">Daftar Dosen</Heading>
-          {canCreate && <Button onClick={() => openAddModal()}>+ Tambah Dosen</Button>}
+          <Heading as="h2" className="mb-0 text-left">Daftar Mata Kuliah</Heading>
+          {canCreate && <Button onClick={() => openAddModal()}>+ Tambah MK</Button>}
         </div>
 
         {isLoading ? (
@@ -115,17 +117,16 @@ const Dosen = () => {
         ) : isError ? (
           <div className="text-center py-4 text-red-500">Terjadi kesalahan saat memuat data.</div>
         ) : (
-          <DosenTable
-            data={dosenList}
+          <MataKuliahTable
+            data={mataKuliahList}
             onEdit={handleEdit}
             onDelete={handleDelete}
-            onDetail={(id) => navigate(`/admin/dosen/${id}`)}
           />
         )}
       </Card>
-      
+
       {isModalOpen && (
-        <DosenModal
+        <MataKuliahModal
           isOpen={isModalOpen}
           isEdit={isEdit}
           form={form}
@@ -138,4 +139,4 @@ const Dosen = () => {
   );
 };
 
-export default Dosen;
+export default MataKuliah;

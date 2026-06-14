@@ -16,6 +16,20 @@
       "nidn": "0603038303"
     }
   ],
+  "kelas": [
+    {
+      "id": 1,
+      "nama": "A11.4401",
+      "matakuliahId": 1,
+      "dosenId": 1
+    },
+    {
+      "id": 2,
+      "nama": "A11.4402",
+      "matakuliahId": 2,
+      "dosenId": 2
+    }
+  ],
   "mahasiswa": [
     {
       "id": 1,
@@ -26,6 +40,26 @@
       "id": 2,
       "nama": "Budi",
       "nim": "A11.2020.00002"
+    }
+  ],
+  "matakuliah": [
+    {
+      "id": 1,
+      "kode": "A11.05401",
+      "nama": "Pemrograman Sisi Klien",
+      "sks": 3
+    },
+    {
+      "id": 2,
+      "kode": "A11.05402",
+      "nama": "Rekayasa Perangkat Lunak",
+      "sks": 4
+    },
+    {
+      "id": 3,
+      "kode": "A11.05403",
+      "nama": "Kriptografi",
+      "sks": 2
     }
   ],
   "user": [
@@ -44,7 +78,15 @@
         "dosen.read",
         "dosen.update",
         "dosen.delete",
-        "users.manage"
+        "users.manage",
+        "matakuliah.create",
+        "matakuliah.read",
+        "matakuliah.update",
+        "matakuliah.delete",
+        "kelas.create",
+        "kelas.read",
+        "kelas.update",
+        "kelas.delete"
       ]
     },
     {
@@ -55,7 +97,9 @@
       "role": "Mahasiswa",
       "permission": [
         "mahasiswa.read",
-        "dosen.read"
+        "dosen.read",
+        "matakuliah.read",
+        "kelas.read"
       ]
     }
   ]
