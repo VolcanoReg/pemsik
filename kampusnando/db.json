@@ -1,4 +1,120 @@
 {
+  "chart": {
+    "students": [
+      {
+        "id": 1,
+        "faculty": "Teknik",
+        "count": 320
+      },
+      {
+        "id": 2,
+        "faculty": "Ekonomi",
+        "count": 210
+      },
+      {
+        "id": 3,
+        "faculty": "Kedokteran",
+        "count": 150
+      },
+      {
+        "id": 4,
+        "faculty": "Sastra",
+        "count": 180
+      },
+      {
+        "id": 5,
+        "faculty": "Hukum",
+        "count": 250
+      }
+    ],
+    "genderRatio": [
+      {
+        "gender": "Laki-laki",
+        "count": 650
+      },
+      {
+        "gender": "Perempuan",
+        "count": 460
+      }
+    ],
+    "registrations": [
+      {
+        "year": "2019",
+        "total": 150
+      },
+      {
+        "year": "2020",
+        "total": 210
+      },
+      {
+        "year": "2021",
+        "total": 280
+      },
+      {
+        "year": "2022",
+        "total": 310
+      },
+      {
+        "year": "2023",
+        "total": 160
+      }
+    ],
+    "gradeDistribution": [
+      {
+        "subject": "Math",
+        "A": 120,
+        "B": 110,
+        "C": 20,
+        "fullMark": 150
+      },
+      {
+        "subject": "Science",
+        "A": 98,
+        "B": 130,
+        "C": 40,
+        "fullMark": 150
+      },
+      {
+        "subject": "History",
+        "A": 86,
+        "B": 130,
+        "C": 50,
+        "fullMark": 150
+      },
+      {
+        "subject": "Art",
+        "A": 99,
+        "B": 100,
+        "C": 20,
+        "fullMark": 150
+      },
+      {
+        "subject": "Sports",
+        "A": 85,
+        "B": 90,
+        "C": 10,
+        "fullMark": 150
+      }
+    ],
+    "lecturerRanks": [
+      {
+        "rank": "Asisten Ahli",
+        "count": 45
+      },
+      {
+        "rank": "Lektor",
+        "count": 30
+      },
+      {
+        "rank": "Lektor Kepala",
+        "count": 15
+      },
+      {
+        "rank": "Guru Besar",
+        "count": 5
+      }
+    ]
+  },
   "dosen": [
     {
       "id": 1,
