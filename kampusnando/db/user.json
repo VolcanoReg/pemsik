@@ -22,7 +22,11 @@
       "kelas.create",
       "kelas.read",
       "kelas.update",
-      "kelas.delete"
+      "kelas.delete",
+      "rencana-studi.read",
+      "rencana-studi.create",
+      "rencana-studi.update",
+      "rencana-studi.delete"
     ]
   },
   {
@@ -35,7 +39,8 @@
       "mahasiswa.read",
       "dosen.read",
       "matakuliah.read",
-      "kelas.read"
+      "kelas.read",
+      "rencana-studi.read"
     ]
   }
 ]

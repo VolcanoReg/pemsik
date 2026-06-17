@@ -23,6 +23,7 @@ import Dosen from "@/Pages/Admin/Dosen/Dosen";
 import DosenDetail from "@/Pages/Admin/DosenDetail/DosenDetail";
 import MataKuliah from "@/Pages/Admin/MataKuliah/MataKuliah";
 import Kelas from "@/Pages/Admin/Kelas/Kelas";
+import RencanaStudi from "@/Pages/Admin/RencanaStudi/RencanaStudi";
 import UserManagement from "@/Pages/Admin/User/UserManagement";
 import PageNotFound from "@/Pages/Error/PageNotFound";
 import Unauthorized from "@/Pages/Error/Unauthorized";
@@ -106,6 +107,14 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute requiredPermission="kelas.read">
             <Kelas />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "rencana-studi",
+        element: (
+          <ProtectedRoute requiredPermission="rencana-studi.read">
+            <RencanaStudi />
           </ProtectedRoute>
         ),
       },

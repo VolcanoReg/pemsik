@@ -3,312 +3,624 @@
     "id": 1,
     "nama": "A11.4401",
     "matakuliahId": 1,
-    "dosenId": 1
+    "dosenId": 1,
+    "mata_kuliah_id": "1",
+    "dosen_id": "1",
+    "mahasiswa_ids": [
+      "4",
+      "9"
+    ]
   },
   {
     "id": 2,
     "nama": "A11.4402",
     "matakuliahId": 2,
-    "dosenId": 2
+    "dosenId": 2,
+    "mata_kuliah_id": "2",
+    "dosen_id": "2",
+    "mahasiswa_ids": [
+      "7",
+      "16"
+    ]
   },
   {
     "id": 3,
     "nama": "A11.4403",
     "matakuliahId": 16,
-    "dosenId": 34
+    "dosenId": 34,
+    "mata_kuliah_id": "16",
+    "dosen_id": "34",
+    "mahasiswa_ids": [
+      "10",
+      "3"
+    ]
   },
   {
     "id": 4,
     "nama": "A11.4404",
     "matakuliahId": 41,
-    "dosenId": 25
+    "dosenId": 25,
+    "mata_kuliah_id": "41",
+    "dosen_id": "25",
+    "mahasiswa_ids": [
+      "13",
+      "10"
+    ]
   },
   {
     "id": 5,
     "nama": "A11.4405",
     "matakuliahId": 28,
-    "dosenId": 38
+    "dosenId": 38,
+    "mata_kuliah_id": "28",
+    "dosen_id": "38",
+    "mahasiswa_ids": [
+      "16",
+      "17"
+    ]
   },
   {
     "id": 6,
     "nama": "A11.4406",
     "matakuliahId": 45,
-    "dosenId": 11
+    "dosenId": 11,
+    "mata_kuliah_id": "45",
+    "dosen_id": "11",
+    "mahasiswa_ids": [
+      "19",
+      "4"
+    ]
   },
   {
     "id": 7,
     "nama": "A11.4407",
     "matakuliahId": 20,
-    "dosenId": 20
+    "dosenId": 20,
+    "mata_kuliah_id": "20",
+    "dosen_id": "20",
+    "mahasiswa_ids": [
+      "2",
+      "11"
+    ]
   },
   {
     "id": 8,
     "nama": "A11.4408",
     "matakuliahId": 24,
-    "dosenId": 38
+    "dosenId": 38,
+    "mata_kuliah_id": "24",
+    "dosen_id": "38",
+    "mahasiswa_ids": [
+      "5",
+      "18"
+    ]
   },
   {
     "id": 9,
     "nama": "A11.4409",
     "matakuliahId": 48,
-    "dosenId": 25
+    "dosenId": 25,
+    "mata_kuliah_id": "48",
+    "dosen_id": "25",
+    "mahasiswa_ids": [
+      "8",
+      "5"
+    ]
   },
   {
     "id": 10,
     "nama": "A11.4410",
     "matakuliahId": 12,
-    "dosenId": 24
+    "dosenId": 24,
+    "mata_kuliah_id": "12",
+    "dosen_id": "24",
+    "mahasiswa_ids": [
+      "11",
+      "12"
+    ]
   },
   {
     "id": 11,
     "nama": "A11.4411",
     "matakuliahId": 32,
-    "dosenId": 3
+    "dosenId": 3,
+    "mata_kuliah_id": "32",
+    "dosen_id": "3",
+    "mahasiswa_ids": [
+      "14",
+      "19"
+    ]
   },
   {
     "id": 12,
     "nama": "A11.4412",
     "matakuliahId": 52,
-    "dosenId": 49
+    "dosenId": 49,
+    "mata_kuliah_id": "52",
+    "dosen_id": "49",
+    "mahasiswa_ids": [
+      "17",
+      "6"
+    ]
   },
   {
     "id": 13,
     "nama": "A11.4413",
     "matakuliahId": 12,
-    "dosenId": 26
+    "dosenId": 26,
+    "mata_kuliah_id": "12",
+    "dosen_id": "26",
+    "mahasiswa_ids": [
+      "20",
+      "13"
+    ]
   },
   {
     "id": 14,
     "nama": "A11.4414",
     "matakuliahId": 47,
-    "dosenId": 32
+    "dosenId": 32,
+    "mata_kuliah_id": "47",
+    "dosen_id": "32",
+    "mahasiswa_ids": [
+      "3",
+      "20"
+    ]
   },
   {
     "id": 15,
     "nama": "A11.4415",
     "matakuliahId": 15,
-    "dosenId": 18
+    "dosenId": 18,
+    "mata_kuliah_id": "15",
+    "dosen_id": "18",
+    "mahasiswa_ids": [
+      "6",
+      "7"
+    ]
   },
   {
     "id": 16,
     "nama": "A11.4416",
     "matakuliahId": 32,
-    "dosenId": 33
+    "dosenId": 33,
+    "mata_kuliah_id": "32",
+    "dosen_id": "33",
+    "mahasiswa_ids": [
+      "9",
+      "14"
+    ]
   },
   {
     "id": 17,
     "nama": "A11.4417",
     "matakuliahId": 23,
-    "dosenId": 4
+    "dosenId": 4,
+    "mata_kuliah_id": "23",
+    "dosen_id": "4",
+    "mahasiswa_ids": [
+      "12",
+      "21"
+    ]
   },
   {
     "id": 18,
     "nama": "A11.4418",
     "matakuliahId": 45,
-    "dosenId": 37
+    "dosenId": 37,
+    "mata_kuliah_id": "45",
+    "dosen_id": "37",
+    "mahasiswa_ids": [
+      "15",
+      "8"
+    ]
   },
   {
     "id": 19,
     "nama": "A11.4419",
     "matakuliahId": 10,
-    "dosenId": 35
+    "dosenId": 35,
+    "mata_kuliah_id": "10",
+    "dosen_id": "35",
+    "mahasiswa_ids": [
+      "18",
+      "15"
+    ]
   },
   {
     "id": 20,
     "nama": "A11.4420",
     "matakuliahId": 7,
-    "dosenId": 43
+    "dosenId": 43,
+    "mata_kuliah_id": "7",
+    "dosen_id": "43",
+    "mahasiswa_ids": [
+      "1",
+      "2"
+    ]
   },
   {
     "id": 21,
     "nama": "A11.4421",
     "matakuliahId": 11,
-    "dosenId": 23
+    "dosenId": 23,
+    "mata_kuliah_id": "11",
+    "dosen_id": "23",
+    "mahasiswa_ids": [
+      "4",
+      "9"
+    ]
   },
   {
     "id": 22,
     "nama": "A11.4422",
     "matakuliahId": 34,
-    "dosenId": 6
+    "dosenId": 6,
+    "mata_kuliah_id": "34",
+    "dosen_id": "6",
+    "mahasiswa_ids": [
+      "7",
+      "16"
+    ]
   },
   {
     "id": 23,
     "nama": "A11.4423",
     "matakuliahId": 22,
-    "dosenId": 4
+    "dosenId": 4,
+    "mata_kuliah_id": "22",
+    "dosen_id": "4",
+    "mahasiswa_ids": [
+      "10",
+      "3"
+    ]
   },
   {
     "id": 24,
     "nama": "A11.4424",
     "matakuliahId": 26,
-    "dosenId": 35
+    "dosenId": 35,
+    "mata_kuliah_id": "26",
+    "dosen_id": "35",
+    "mahasiswa_ids": [
+      "13",
+      "10"
+    ]
   },
   {
     "id": 25,
     "nama": "A11.4425",
     "matakuliahId": 50,
-    "dosenId": 32
+    "dosenId": 32,
+    "mata_kuliah_id": "50",
+    "dosen_id": "32",
+    "mahasiswa_ids": [
+      "16",
+      "17"
+    ]
   },
   {
     "id": 26,
     "nama": "A11.4426",
     "matakuliahId": 18,
-    "dosenId": 7
+    "dosenId": 7,
+    "mata_kuliah_id": "18",
+    "dosen_id": "7",
+    "mahasiswa_ids": [
+      "19",
+      "4"
+    ]
   },
   {
     "id": 27,
     "nama": "A11.4427",
     "matakuliahId": 19,
-    "dosenId": 7
+    "dosenId": 7,
+    "mata_kuliah_id": "19",
+    "dosen_id": "7",
+    "mahasiswa_ids": [
+      "2",
+      "11"
+    ]
   },
   {
     "id": 28,
     "nama": "A11.4428",
     "matakuliahId": 32,
-    "dosenId": 6
+    "dosenId": 6,
+    "mata_kuliah_id": "32",
+    "dosen_id": "6",
+    "mahasiswa_ids": [
+      "5",
+      "18"
+    ]
   },
   {
     "id": 29,
     "nama": "A11.4429",
     "matakuliahId": 19,
-    "dosenId": 30
+    "dosenId": 30,
+    "mata_kuliah_id": "19",
+    "dosen_id": "30",
+    "mahasiswa_ids": [
+      "8",
+      "5"
+    ]
   },
   {
     "id": 30,
     "nama": "A11.4430",
     "matakuliahId": 49,
-    "dosenId": 7
+    "dosenId": 7,
+    "mata_kuliah_id": "49",
+    "dosen_id": "7",
+    "mahasiswa_ids": [
+      "11",
+      "12"
+    ]
   },
   {
     "id": 31,
     "nama": "A11.4431",
     "matakuliahId": 41,
-    "dosenId": 41
+    "dosenId": 41,
+    "mata_kuliah_id": "41",
+    "dosen_id": "41",
+    "mahasiswa_ids": [
+      "14",
+      "19"
+    ]
   },
   {
     "id": 32,
     "nama": "A11.4432",
     "matakuliahId": 47,
-    "dosenId": 18
+    "dosenId": 18,
+    "mata_kuliah_id": "47",
+    "dosen_id": "18",
+    "mahasiswa_ids": [
+      "17",
+      "6"
+    ]
   },
   {
     "id": 33,
     "nama": "A11.4433",
     "matakuliahId": 21,
-    "dosenId": 42
+    "dosenId": 42,
+    "mata_kuliah_id": "21",
+    "dosen_id": "42",
+    "mahasiswa_ids": [
+      "20",
+      "13"
+    ]
   },
   {
     "id": 34,
     "nama": "A11.4434",
     "matakuliahId": 34,
-    "dosenId": 15
+    "dosenId": 15,
+    "mata_kuliah_id": "34",
+    "dosen_id": "15",
+    "mahasiswa_ids": [
+      "3",
+      "20"
+    ]
   },
   {
     "id": 35,
     "nama": "A11.4435",
     "matakuliahId": 14,
-    "dosenId": 17
+    "dosenId": 17,
+    "mata_kuliah_id": "14",
+    "dosen_id": "17",
+    "mahasiswa_ids": [
+      "6",
+      "7"
+    ]
   },
   {
     "id": 36,
     "nama": "A11.4436",
     "matakuliahId": 20,
-    "dosenId": 25
+    "dosenId": 25,
+    "mata_kuliah_id": "20",
+    "dosen_id": "25",
+    "mahasiswa_ids": [
+      "9",
+      "14"
+    ]
   },
   {
     "id": 37,
     "nama": "A11.4437",
     "matakuliahId": 30,
-    "dosenId": 17
+    "dosenId": 17,
+    "mata_kuliah_id": "30",
+    "dosen_id": "17",
+    "mahasiswa_ids": [
+      "12",
+      "21"
+    ]
   },
   {
     "id": 38,
     "nama": "A11.4438",
     "matakuliahId": 34,
-    "dosenId": 27
+    "dosenId": 27,
+    "mata_kuliah_id": "34",
+    "dosen_id": "27",
+    "mahasiswa_ids": [
+      "15",
+      "8"
+    ]
   },
   {
     "id": 39,
     "nama": "A11.4439",
     "matakuliahId": 27,
-    "dosenId": 41
+    "dosenId": 41,
+    "mata_kuliah_id": "27",
+    "dosen_id": "41",
+    "mahasiswa_ids": [
+      "18",
+      "15"
+    ]
   },
   {
     "id": 40,
     "nama": "A11.4440",
     "matakuliahId": 31,
-    "dosenId": 3
+    "dosenId": 3,
+    "mata_kuliah_id": "31",
+    "dosen_id": "3",
+    "mahasiswa_ids": [
+      "1",
+      "2"
+    ]
   },
   {
     "id": 41,
     "nama": "A11.4441",
     "matakuliahId": 30,
-    "dosenId": 51
+    "dosenId": 51,
+    "mata_kuliah_id": "30",
+    "dosen_id": "51",
+    "mahasiswa_ids": [
+      "4",
+      "9"
+    ]
   },
   {
     "id": 42,
     "nama": "A11.4442",
     "matakuliahId": 39,
-    "dosenId": 32
+    "dosenId": 32,
+    "mata_kuliah_id": "39",
+    "dosen_id": "32",
+    "mahasiswa_ids": [
+      "7",
+      "16"
+    ]
   },
   {
     "id": 43,
     "nama": "A11.4443",
     "matakuliahId": 45,
-    "dosenId": 51
+    "dosenId": 51,
+    "mata_kuliah_id": "45",
+    "dosen_id": "51",
+    "mahasiswa_ids": [
+      "10",
+      "3"
+    ]
   },
   {
     "id": 44,
     "nama": "A11.4444",
     "matakuliahId": 30,
-    "dosenId": 49
+    "dosenId": 49,
+    "mata_kuliah_id": "30",
+    "dosen_id": "49",
+    "mahasiswa_ids": [
+      "13",
+      "10"
+    ]
   },
   {
     "id": 45,
     "nama": "A11.4445",
     "matakuliahId": 4,
-    "dosenId": 32
+    "dosenId": 32,
+    "mata_kuliah_id": "4",
+    "dosen_id": "32",
+    "mahasiswa_ids": [
+      "16",
+      "17"
+    ]
   },
   {
     "id": 46,
     "nama": "A11.4446",
     "matakuliahId": 43,
-    "dosenId": 36
+    "dosenId": 36,
+    "mata_kuliah_id": "43",
+    "dosen_id": "36",
+    "mahasiswa_ids": [
+      "19",
+      "4"
+    ]
   },
   {
     "id": 47,
     "nama": "A11.4447",
     "matakuliahId": 45,
-    "dosenId": 29
+    "dosenId": 29,
+    "mata_kuliah_id": "45",
+    "dosen_id": "29",
+    "mahasiswa_ids": [
+      "2",
+      "11"
+    ]
   },
   {
     "id": 48,
     "nama": "A11.4448",
     "matakuliahId": 18,
-    "dosenId": 15
+    "dosenId": 15,
+    "mata_kuliah_id": "18",
+    "dosen_id": "15",
+    "mahasiswa_ids": [
+      "5",
+      "18"
+    ]
   },
   {
     "id": 49,
     "nama": "A11.4449",
     "matakuliahId": 24,
-    "dosenId": 1
+    "dosenId": 1,
+    "mata_kuliah_id": "24",
+    "dosen_id": "1",
+    "mahasiswa_ids": [
+      "8",
+      "5"
+    ]
   },
   {
     "id": 50,
     "nama": "A11.4450",
     "matakuliahId": 5,
-    "dosenId": 26
+    "dosenId": 26,
+    "mata_kuliah_id": "5",
+    "dosen_id": "26",
+    "mahasiswa_ids": [
+      "11",
+      "12"
+    ]
   },
   {
     "id": 51,
     "nama": "A11.4451",
     "matakuliahId": 44,
-    "dosenId": 9
+    "dosenId": 9,
+    "mata_kuliah_id": "44",
+    "dosen_id": "9",
+    "mahasiswa_ids": [
+      "14",
+      "19"
+    ]
   },
   {
     "id": 52,
     "nama": "A11.4452",
     "matakuliahId": 4,
-    "dosenId": 40
+    "dosenId": 40,
+    "mata_kuliah_id": "4",
+    "dosen_id": "40",
+    "mahasiswa_ids": [
+      "17",
+      "6"
+    ]
   }
 ]
