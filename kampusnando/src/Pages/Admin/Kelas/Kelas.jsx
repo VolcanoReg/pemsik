@@ -9,6 +9,7 @@ import { toastSuccess, toastError } from "@/Utils/Helpers/ToastHelpers";
 import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
 import { useDosen } from "@/Utils/Hooks/useDosen";
 import { useMataKuliah } from "@/Utils/Hooks/useMataKuliah";
+import { useMahasiswa } from "@/Utils/Hooks/useMahasiswa";
 import {
   useKelas,
   useStoreKelas,
@@ -28,6 +29,9 @@ const Kelas = () => {
   const [search, setSearch] = useState("");
   const [sortField, setSortField] = useState("id");
   const [sortOrder, setSortOrder] = useState("desc");
+
+  // State to hold selected student for dropdown in each row
+  const [selectedMhs, setSelectedMhs] = useState({});
 
   const canCreate = user?.permission?.includes("kelas.create");
 
@@ -50,6 +54,14 @@ const Kelas = () => {
 
   const { data: mataKuliahResponse, isLoading: isMKLoading } = useMataKuliah({});
   const mataKuliahList = mataKuliahResponse?.data || [];
+
+  // Load ALL Mahasiswa
+  const { data: mahasiswaResponse, isLoading: isMhsLoading } = useMahasiswa({});
+  const mahasiswaList = mahasiswaResponse?.data || [];
+
+  // Load ALL Kelas (unpaginated) for accurate SKS sum calculations and validations
+  const { data: kelasFullResponse, isLoading: isKelasFullLoading } = useKelas({});
+  const kelasFull = kelasFullResponse?.data || [];
 
   const { mutate: addKelas } = useStoreKelas();
   const { mutate: editKelas } = useUpdateKelas();
@@ -80,10 +92,56 @@ const Kelas = () => {
       return;
     }
 
+    const selectedMKId = form.matakuliahId;
+    const selectedDsnId = form.dosenId;
+
+    // 1. Validation Rule: "1 Mata Kuliah hanya boleh ada 1 Dosen" across all classes
+    const conflictClass = kelasFull.find(
+      (k) =>
+        String(k.matakuliahId || k.mata_kuliah_id) === String(selectedMKId) &&
+        String(k.dosenId || k.dosen_id) !== String(selectedDsnId) &&
+        String(k.id) !== String(form.id)
+    );
+
+    if (conflictClass) {
+      const conflictingDsn = dosenList.find((d) => String(d.id) === String(conflictClass.dosenId || conflictClass.dosen_id));
+      toastError(
+        `Mata Kuliah ini sudah diampu oleh Dosen: ${
+          conflictingDsn?.nama || conflictClass.dosenId
+        }. Satu Mata Kuliah hanya boleh diampu oleh satu Dosen.`
+      );
+      return;
+    }
+
+    // 2. Validation Rule: Dosen max SKS limit check
+    const mkObj = mataKuliahList.find((m) => String(m.id) === String(selectedMKId));
+    const sksKelasIni = mkObj?.sks || 0;
+
+    const totalSksDiampu = kelasFull
+      .filter((k) => String(k.dosenId || k.dosen_id) === String(selectedDsnId) && String(k.id) !== String(form.id))
+      .reduce((sum, k) => {
+        const m = mataKuliahList.find((mkItem) => String(mkItem.id) === String(k.matakuliahId || k.mata_kuliah_id));
+        return sum + (m?.sks || 0);
+      }, 0);
+
+    const currentDsn = dosenList.find((d) => String(d.id) === String(selectedDsnId));
+    const maxDsnSks = currentDsn?.max_sks || 12;
+
+    if (totalSksDiampu + sksKelasIni > maxDsnSks) {
+      toastError(
+        `Beban SKS dosen melebihi batas (${maxDsnSks} SKS). Beban saat ini: ${totalSksDiampu} SKS, Ingin ditambah: ${sksKelasIni} SKS.`
+      );
+      return;
+    }
+
+    // Sync formats (Tugas 11 camelCase + Tugas 12 snake_case)
     const payload = {
       ...form,
       matakuliahId: parseInt(form.matakuliahId, 10),
       dosenId: parseInt(form.dosenId, 10),
+      mata_kuliah_id: String(form.matakuliahId),
+      dosen_id: String(form.dosenId),
+      mahasiswa_ids: form.mahasiswa_ids || [],
     };
 
     if (isEdit) {
@@ -99,7 +157,7 @@ const Kelas = () => {
             },
             onError: (err) => {
               toastError("Gagal memperbarui data: " + err.message);
-            }
+            },
           }
         );
       });
@@ -112,12 +170,11 @@ const Kelas = () => {
       addKelas(payload, {
         onSuccess: () => {
           toastSuccess("Kelas berhasil ditambahkan");
-          setForm({ id: "", nama: "", matakuliahId: "", dosenId: "" });
           setIsModalOpen(false);
         },
         onError: (err) => {
           toastError("Gagal menambahkan data: " + err.message);
-        }
+        },
       });
     }
   };
@@ -126,8 +183,9 @@ const Kelas = () => {
     setForm({
       id: kls.id,
       nama: kls.nama,
-      matakuliahId: kls.matakuliahId,
-      dosenId: kls.dosenId,
+      matakuliahId: kls.matakuliahId || kls.mata_kuliah_id,
+      dosenId: kls.dosenId || kls.dosen_id,
+      mahasiswa_ids: kls.mahasiswa_ids || [],
     });
     setIsEdit(true);
     setIsModalOpen(true);
@@ -141,23 +199,89 @@ const Kelas = () => {
         },
         onError: (err) => {
           toastError("Gagal menghapus data: " + err.message);
-        }
+        },
       });
     });
   };
 
+  // Student management handlers
+  const handleAddMahasiswa = (kelasItem, mhsId) => {
+    if (!mhsId) {
+      toastError("Pilih mahasiswa terlebih dahulu");
+      return;
+    }
+
+    const mk = mataKuliahList.find((m) => String(m.id) === String(kelasItem.matakuliahId || kelasItem.mata_kuliah_id));
+    const sksKelasIni = mk?.sks || 0;
+
+    // Hitung SKS terdaftar mahasiswa
+    const totalSksMhs = kelasFull
+      .filter((k) => (k.mahasiswa_ids || []).map(String).includes(String(mhsId)))
+      .reduce((sum, k) => {
+        const m = mataKuliahList.find((mkItem) => String(mkItem.id) === String(k.matakuliahId || k.mata_kuliah_id));
+        return sum + (m?.sks || 0);
+      }, 0);
+
+    const studentObj = mahasiswaList.find((m) => String(m.id) === String(mhsId));
+    const maxMhsSks = studentObj?.max_sks || 20;
+
+    if (totalSksMhs + sksKelasIni > maxMhsSks) {
+      toastError(
+        `Batas SKS mahasiswa terlampaui! Maksimal SKS: ${maxMhsSks} SKS. SKS terpakai: ${totalSksMhs} SKS, Ingin ditambah: ${sksKelasIni} SKS.`
+      );
+      return;
+    }
+
+    const updated = {
+      ...kelasItem,
+      mahasiswa_ids: [...(kelasItem.mahasiswa_ids || []).map(String), String(mhsId)],
+    };
+
+    editKelas(
+      { id: kelasItem.id, data: updated },
+      {
+        onSuccess: () => {
+          toastSuccess("Mahasiswa berhasil ditambahkan ke kelas");
+          setSelectedMhs((prev) => ({ ...prev, [kelasItem.id]: "" }));
+        },
+        onError: (err) => {
+          toastError("Gagal menambahkan mahasiswa: " + err.message);
+        },
+      }
+    );
+  };
+
+  const handleDeleteMahasiswa = (kelasItem, mhsId) => {
+    const updated = {
+      ...kelasItem,
+      mahasiswa_ids: (kelasItem.mahasiswa_ids || []).map(String).filter((id) => id !== String(mhsId)),
+    };
+
+    editKelas(
+      { id: kelasItem.id, data: updated },
+      {
+        onSuccess: () => {
+          toastSuccess("Mahasiswa berhasil dikeluarkan dari kelas");
+        },
+        onError: (err) => {
+          toastError("Gagal mengeluarkan mahasiswa: " + err.message);
+        },
+      }
+    );
+  };
+
   // Resolve relasi mata kuliah dan dosen
   const mappedKelas = kelasList.map((k) => {
-    const mk = mataKuliahList.find((m) => Number(m.id) === Number(k.matakuliahId));
-    const dsn = dosenList.find((d) => Number(d.id) === Number(k.dosenId));
+    const mk = mataKuliahList.find((m) => Number(m.id) === Number(k.matakuliahId || k.mata_kuliah_id));
+    const dsn = dosenList.find((d) => Number(d.id) === Number(k.dosenId || k.dosen_id));
     return {
       ...k,
-      mataKuliahNama: mk ? `${mk.kode} - ${mk.nama}` : "N/A",
+      mataKuliahNama: mk ? `${mk.kode} - ${mk.nama} (${mk.sks} SKS)` : "N/A",
       dosenNama: dsn ? dsn.nama : "N/A",
     };
   });
 
-  const isLoading = isKelasLoading || isDosenLoading || isMKLoading;
+  const isLoading = isKelasLoading || isDosenLoading || isMKLoading || isMhsLoading || isKelasFullLoading;
 
   return (
     <>
@@ -226,6 +350,14 @@ const Kelas = () => {
           <>
             <KelasTable
               data={mappedKelas}
+              kelasFull={kelasFull}
+              mahasiswa={mahasiswaList}
+              dosen={dosenList}
+              mataKuliah={mataKuliahList}
+              selectedMhs={selectedMhs}
+              setSelectedMhs={setSelectedMhs}
+              handleAddMahasiswa={handleAddMahasiswa}
+              handleDeleteMahasiswa={handleDeleteMahasiswa}
               onEdit={handleEdit}
               onDelete={handleDelete}
             />
