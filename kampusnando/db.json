@@ -1,0 +1,2032 @@
+{
+  "chart": {
+    "students": [
+      {
+        "id": 1,
+        "faculty": "Teknik",
+        "count": 320
+      },
+      {
+        "id": 2,
+        "faculty": "Ekonomi",
+        "count": 210
+      },
+      {
+        "id": 3,
+        "faculty": "Kedokteran",
+        "count": 150
+      },
+      {
+        "id": 4,
+        "faculty": "Sastra",
+        "count": 180
+      },
+      {
+        "id": 5,
+        "faculty": "Hukum",
+        "count": 250
+      }
+    ],
+    "genderRatio": [
+      {
+        "gender": "Laki-laki",
+        "count": 650
+      },
+      {
+        "gender": "Perempuan",
+        "count": 460
+      }
+    ],
+    "registrations": [
+      {
+        "year": "2019",
+        "total": 150
+      },
+      {
+        "year": "2020",
+        "total": 210
+      },
+      {
+        "year": "2021",
+        "total": 280
+      },
+      {
+        "year": "2022",
+        "total": 310
+      },
+      {
+        "year": "2023",
+        "total": 160
+      }
+    ],
+    "gradeDistribution": [
+      {
+        "subject": "Math",
+        "A": 120,
+        "B": 110,
+        "C": 20,
+        "fullMark": 150
+      },
+      {
+        "subject": "Science",
+        "A": 98,
+        "B": 130,
+        "C": 40,
+        "fullMark": 150
+      },
+      {
+        "subject": "History",
+        "A": 86,
+        "B": 130,
+        "C": 50,
+        "fullMark": 150
+      },
+      {
+        "subject": "Art",
+        "A": 99,
+        "B": 100,
+        "C": 20,
+        "fullMark": 150
+      },
+      {
+        "subject": "Sports",
+        "A": 85,
+        "B": 90,
+        "C": 10,
+        "fullMark": 150
+      }
+    ],
+    "lecturerRanks": [
+      {
+        "rank": "Asisten Ahli",
+        "count": 45
+      },
+      {
+        "rank": "Lektor",
+        "count": 30
+      },
+      {
+        "rank": "Lektor Kepala",
+        "count": 15
+      },
+      {
+        "rank": "Guru Besar",
+        "count": 5
+      }
+    ]
+  },
+  "dosen": [
+    {
+      "id": 1,
+      "nama": "Dr. Budi Santoso",
+      "nidn": "0601018101",
+      "max_sks": 12
+    },
+    {
+      "id": 2,
+      "nama": "Prof. Siti Aminah",
+      "nidn": "0602028202",
+      "max_sks": 10
+    },
+    {
+      "id": 3,
+      "nama": "Eko Prasetyo, M.Kom.",
+      "nidn": "0603038303",
+      "max_sks": 12
+    },
+    {
+      "id": 4,
+      "nama": "Dosen Fiktif 1, S.Kom., M.Kom.",
+      "nidn": "060040001",
+      "max_sks": 10
+    },
+    {
+      "id": 5,
+      "nama": "Dosen Fiktif 2, S.Kom., M.Kom.",
+      "nidn": "060050002",
+      "max_sks": 12
+    },
+    {
+      "id": 6,
+      "nama": "Dosen Fiktif 3, S.Kom., M.Kom.",
+      "nidn": "060060003",
+      "max_sks": 10
+    },
+    {
+      "id": 7,
+      "nama": "Dosen Fiktif 4, S.Kom., M.Kom.",
+      "nidn": "060070004",
+      "max_sks": 12
+    },
+    {
+      "id": 8,
+      "nama": "Dosen Fiktif 5, S.Kom., M.Kom.",
+      "nidn": "060080005",
+      "max_sks": 10
+    },
+    {
+      "id": 9,
+      "nama": "Dosen Fiktif 6, S.Kom., M.Kom.",
+      "nidn": "060090006",
+      "max_sks": 12
+    },
+    {
+      "id": 10,
+      "nama": "Dosen Fiktif 7, S.Kom., M.Kom.",
+      "nidn": "060100007",
+      "max_sks": 10
+    },
+    {
+      "id": 11,
+      "nama": "Dosen Fiktif 8, S.Kom., M.Kom.",
+      "nidn": "060110008",
+      "max_sks": 12
+    },
+    {
+      "id": 12,
+      "nama": "Dosen Fiktif 9, S.Kom., M.Kom.",
+      "nidn": "060120009",
+      "max_sks": 10
+    },
+    {
+      "id": 13,
+      "nama": "Dosen Fiktif 10, S.Kom., M.Kom.",
+      "nidn": "060130010",
+      "max_sks": 12
+    },
+    {
+      "id": 14,
+      "nama": "Dosen Fiktif 11, S.Kom., M.Kom.",
+      "nidn": "060140011",
+      "max_sks": 10
+    },
+    {
+      "id": 15,
+      "nama": "Dosen Fiktif 12, S.Kom., M.Kom.",
+      "nidn": "060150012",
+      "max_sks": 12
+    },
+    {
+      "id": 16,
+      "nama": "Dosen Fiktif 13, S.Kom., M.Kom.",
+      "nidn": "060160013",
+      "max_sks": 10
+    },
+    {
+      "id": 17,
+      "nama": "Dosen Fiktif 14, S.Kom., M.Kom.",
+      "nidn": "060170014",
+      "max_sks": 12
+    },
+    {
+      "id": 18,
+      "nama": "Dosen Fiktif 15, S.Kom., M.Kom.",
+      "nidn": "060180015",
+      "max_sks": 10
+    },
+    {
+      "id": 19,
+      "nama": "Dosen Fiktif 16, S.Kom., M.Kom.",
+      "nidn": "060190016",
+      "max_sks": 12
+    },
+    {
+      "id": 20,
+      "nama": "Dosen Fiktif 17, S.Kom., M.Kom.",
+      "nidn": "060200017",
+      "max_sks": 10
+    },
+    {
+      "id": 21,
+      "nama": "Dosen Fiktif 18, S.Kom., M.Kom.",
+      "nidn": "060210018",
+      "max_sks": 12
+    },
+    {
+      "id": 22,
+      "nama": "Dosen Fiktif 19, S.Kom., M.Kom.",
+      "nidn": "060220019",
+      "max_sks": 10
+    },
+    {
+      "id": 23,
+      "nama": "Dosen Fiktif 20, S.Kom., M.Kom.",
+      "nidn": "060230020",
+      "max_sks": 12
+    },
+    {
+      "id": 24,
+      "nama": "Dosen Fiktif 21, S.Kom., M.Kom.",
+      "nidn": "060240021",
+      "max_sks": 10
+    },
+    {
+      "id": 25,
+      "nama": "Dosen Fiktif 22, S.Kom., M.Kom.",
+      "nidn": "060250022",
+      "max_sks": 12
+    },
+    {
+      "id": 26,
+      "nama": "Dosen Fiktif 23, S.Kom., M.Kom.",
+      "nidn": "060260023",
+      "max_sks": 10
+    },
+    {
+      "id": 27,
+      "nama": "Dosen Fiktif 24, S.Kom., M.Kom.",
+      "nidn": "060270024",
+      "max_sks": 12
+    },
+    {
+      "id": 28,
+      "nama": "Dosen Fiktif 25, S.Kom., M.Kom.",
+      "nidn": "060280025",
+      "max_sks": 10
+    },
+    {
+      "id": 29,
+      "nama": "Dosen Fiktif 26, S.Kom., M.Kom.",
+      "nidn": "060290026",
+      "max_sks": 12
+    },
+    {
+      "id": 30,
+      "nama": "Dosen Fiktif 27, S.Kom., M.Kom.",
+      "nidn": "060300027",
+      "max_sks": 10
+    },
+    {
+      "id": 31,
+      "nama": "Dosen Fiktif 28, S.Kom., M.Kom.",
+      "nidn": "060310028",
+      "max_sks": 12
+    },
+    {
+      "id": 32,
+      "nama": "Dosen Fiktif 29, S.Kom., M.Kom.",
+      "nidn": "060320029",
+      "max_sks": 10
+    },
+    {
+      "id": 33,
+      "nama": "Dosen Fiktif 30, S.Kom., M.Kom.",
+      "nidn": "060330030",
+      "max_sks": 12
+    },
+    {
+      "id": 34,
+      "nama": "Dosen Fiktif 31, S.Kom., M.Kom.",
+      "nidn": "060340031",
+      "max_sks": 10
+    },
+    {
+      "id": 35,
+      "nama": "Dosen Fiktif 32, S.Kom., M.Kom.",
+      "nidn": "060350032",
+      "max_sks": 12
+    },
+    {
+      "id": 36,
+      "nama": "Dosen Fiktif 33, S.Kom., M.Kom.",
+      "nidn": "060360033",
+      "max_sks": 10
+    },
+    {
+      "id": 37,
+      "nama": "Dosen Fiktif 34, S.Kom., M.Kom.",
+      "nidn": "060370034",
+      "max_sks": 12
+    },
+    {
+      "id": 38,
+      "nama": "Dosen Fiktif 35, S.Kom., M.Kom.",
+      "nidn": "060380035",
+      "max_sks": 10
+    },
+    {
+      "id": 39,
+      "nama": "Dosen Fiktif 36, S.Kom., M.Kom.",
+      "nidn": "060390036",
+      "max_sks": 12
+    },
+    {
+      "id": 40,
+      "nama": "Dosen Fiktif 37, S.Kom., M.Kom.",
+      "nidn": "060400037",
+      "max_sks": 10
+    },
+    {
+      "id": 41,
+      "nama": "Dosen Fiktif 38, S.Kom., M.Kom.",
+      "nidn": "060410038",
+      "max_sks": 12
+    },
+    {
+      "id": 42,
+      "nama": "Dosen Fiktif 39, S.Kom., M.Kom.",
+      "nidn": "060420039",
+      "max_sks": 10
+    },
+    {
+      "id": 43,
+      "nama": "Dosen Fiktif 40, S.Kom., M.Kom.",
+      "nidn": "060430040",
+      "max_sks": 12
+    },
+    {
+      "id": 44,
+      "nama": "Dosen Fiktif 41, S.Kom., M.Kom.",
+      "nidn": "060440041",
+      "max_sks": 10
+    },
+    {
+      "id": 45,
+      "nama": "Dosen Fiktif 42, S.Kom., M.Kom.",
+      "nidn": "060450042",
+      "max_sks": 12
+    },
+    {
+      "id": 46,
+      "nama": "Dosen Fiktif 43, S.Kom., M.Kom.",
+      "nidn": "060460043",
+      "max_sks": 10
+    },
+    {
+      "id": 47,
+      "nama": "Dosen Fiktif 44, S.Kom., M.Kom.",
+      "nidn": "060470044",
+      "max_sks": 12
+    },
+    {
+      "id": 48,
+      "nama": "Dosen Fiktif 45, S.Kom., M.Kom.",
+      "nidn": "060480045",
+      "max_sks": 10
+    },
+    {
+      "id": 49,
+      "nama": "Dosen Fiktif 46, S.Kom., M.Kom.",
+      "nidn": "060490046",
+      "max_sks": 12
+    },
+    {
+      "id": 50,
+      "nama": "Dosen Fiktif 47, S.Kom., M.Kom.",
+      "nidn": "060500047",
+      "max_sks": 10
+    },
+    {
+      "id": 51,
+      "nama": "Dosen Fiktif 48, S.Kom., M.Kom.",
+      "nidn": "060510048",
+      "max_sks": 12
+    },
+    {
+      "id": 52,
+      "nama": "Dosen Fiktif 49, S.Kom., M.Kom.",
+      "nidn": "060520049",
+      "max_sks": 10
+    },
+    {
+      "id": 53,
+      "nama": "Dosen Fiktif 50, S.Kom., M.Kom.",
+      "nidn": "060530050",
+      "max_sks": 12
+    }
+  ],
+  "kelas": [
+    {
+      "id": 1,
+      "nama": "A11.4401",
+      "matakuliahId": 1,
+      "dosenId": 1,
+      "mata_kuliah_id": "1",
+      "dosen_id": "1",
+      "mahasiswa_ids": [
+        "4",
+        "9"
+      ]
+    },
+    {
+      "id": 2,
+      "nama": "A11.4402",
+      "matakuliahId": 2,
+      "dosenId": 2,
+      "mata_kuliah_id": "2",
+      "dosen_id": "2",
+      "mahasiswa_ids": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "id": 3,
+      "nama": "A11.4403",
+      "matakuliahId": 16,
+      "dosenId": 34,
+      "mata_kuliah_id": "16",
+      "dosen_id": "34",
+      "mahasiswa_ids": [
+        "10",
+        "3"
+      ]
+    },
+    {
+      "id": 4,
+      "nama": "A11.4404",
+      "matakuliahId": 41,
+      "dosenId": 25,
+      "mata_kuliah_id": "41",
+      "dosen_id": "25",
+      "mahasiswa_ids": [
+        "13",
+        "10"
+      ]
+    },
+    {
+      "id": 5,
+      "nama": "A11.4405",
+      "matakuliahId": 28,
+      "dosenId": 38,
+      "mata_kuliah_id": "28",
+      "dosen_id": "38",
+      "mahasiswa_ids": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "id": 6,
+      "nama": "A11.4406",
+      "matakuliahId": 45,
+      "dosenId": 11,
+      "mata_kuliah_id": "45",
+      "dosen_id": "11",
+      "mahasiswa_ids": [
+        "19",
+        "4"
+      ]
+    },
+    {
+      "id": 7,
+      "nama": "A11.4407",
+      "matakuliahId": 20,
+      "dosenId": 20,
+      "mata_kuliah_id": "20",
+      "dosen_id": "20",
+      "mahasiswa_ids": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "id": 8,
+      "nama": "A11.4408",
+      "matakuliahId": 24,
+      "dosenId": 38,
+      "mata_kuliah_id": "24",
+      "dosen_id": "38",
+      "mahasiswa_ids": [
+        "5",
+        "18"
+      ]
+    },
+    {
+      "id": 9,
+      "nama": "A11.4409",
+      "matakuliahId": 48,
+      "dosenId": 25,
+      "mata_kuliah_id": "48",
+      "dosen_id": "25",
+      "mahasiswa_ids": [
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": 10,
+      "nama": "A11.4410",
+      "matakuliahId": 12,
+      "dosenId": 24,
+      "mata_kuliah_id": "12",
+      "dosen_id": "24",
+      "mahasiswa_ids": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": 11,
+      "nama": "A11.4411",
+      "matakuliahId": 32,
+      "dosenId": 3,
+      "mata_kuliah_id": "32",
+      "dosen_id": "3",
+      "mahasiswa_ids": [
+        "14",
+        "19"
+      ]
+    },
+    {
+      "id": 12,
+      "nama": "A11.4412",
+      "matakuliahId": 52,
+      "dosenId": 49,
+      "mata_kuliah_id": "52",
+      "dosen_id": "49",
+      "mahasiswa_ids": [
+        "17",
+        "6"
+      ]
+    },
+    {
+      "id": 13,
+      "nama": "A11.4413",
+      "matakuliahId": 12,
+      "dosenId": 26,
+      "mata_kuliah_id": "12",
+      "dosen_id": "26",
+      "mahasiswa_ids": [
+        "20",
+        "13"
+      ]
+    },
+    {
+      "id": 14,
+      "nama": "A11.4414",
+      "matakuliahId": 47,
+      "dosenId": 32,
+      "mata_kuliah_id": "47",
+      "dosen_id": "32",
+      "mahasiswa_ids": [
+        "3",
+        "20"
+      ]
+    },
+    {
+      "id": 15,
+      "nama": "A11.4415",
+      "matakuliahId": 15,
+      "dosenId": 18,
+      "mata_kuliah_id": "15",
+      "dosen_id": "18",
+      "mahasiswa_ids": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "id": 16,
+      "nama": "A11.4416",
+      "matakuliahId": 32,
+      "dosenId": 33,
+      "mata_kuliah_id": "32",
+      "dosen_id": "33",
+      "mahasiswa_ids": [
+        "9",
+        "14"
+      ]
+    },
+    {
+      "id": 17,
+      "nama": "A11.4417",
+      "matakuliahId": 23,
+      "dosenId": 4,
+      "mata_kuliah_id": "23",
+      "dosen_id": "4",
+      "mahasiswa_ids": [
+        "12",
+        "21"
+      ]
+    },
+    {
+      "id": 18,
+      "nama": "A11.4418",
+      "matakuliahId": 45,
+      "dosenId": 37,
+      "mata_kuliah_id": "45",
+      "dosen_id": "37",
+      "mahasiswa_ids": [
+        "15",
+        "8"
+      ]
+    },
+    {
+      "id": 19,
+      "nama": "A11.4419",
+      "matakuliahId": 10,
+      "dosenId": 35,
+      "mata_kuliah_id": "10",
+      "dosen_id": "35",
+      "mahasiswa_ids": [
+        "18",
+        "15"
+      ]
+    },
+    {
+      "id": 20,
+      "nama": "A11.4420",
+      "matakuliahId": 7,
+      "dosenId": 43,
+      "mata_kuliah_id": "7",
+      "dosen_id": "43",
+      "mahasiswa_ids": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": 21,
+      "nama": "A11.4421",
+      "matakuliahId": 11,
+      "dosenId": 23,
+      "mata_kuliah_id": "11",
+      "dosen_id": "23",
+      "mahasiswa_ids": [
+        "4",
+        "9"
+      ]
+    },
+    {
+      "id": 22,
+      "nama": "A11.4422",
+      "matakuliahId": 34,
+      "dosenId": 6,
+      "mata_kuliah_id": "34",
+      "dosen_id": "6",
+      "mahasiswa_ids": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "id": 23,
+      "nama": "A11.4423",
+      "matakuliahId": 22,
+      "dosenId": 4,
+      "mata_kuliah_id": "22",
+      "dosen_id": "4",
+      "mahasiswa_ids": [
+        "10",
+        "3"
+      ]
+    },
+    {
+      "id": 24,
+      "nama": "A11.4424",
+      "matakuliahId": 26,
+      "dosenId": 35,
+      "mata_kuliah_id": "26",
+      "dosen_id": "35",
+      "mahasiswa_ids": [
+        "13",
+        "10"
+      ]
+    },
+    {
+      "id": 25,
+      "nama": "A11.4425",
+      "matakuliahId": 50,
+      "dosenId": 32,
+      "mata_kuliah_id": "50",
+      "dosen_id": "32",
+      "mahasiswa_ids": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "id": 26,
+      "nama": "A11.4426",
+      "matakuliahId": 18,
+      "dosenId": 7,
+      "mata_kuliah_id": "18",
+      "dosen_id": "7",
+      "mahasiswa_ids": [
+        "19",
+        "4"
+      ]
+    },
+    {
+      "id": 27,
+      "nama": "A11.4427",
+      "matakuliahId": 19,
+      "dosenId": 7,
+      "mata_kuliah_id": "19",
+      "dosen_id": "7",
+      "mahasiswa_ids": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "id": 28,
+      "nama": "A11.4428",
+      "matakuliahId": 32,
+      "dosenId": 6,
+      "mata_kuliah_id": "32",
+      "dosen_id": "6",
+      "mahasiswa_ids": [
+        "5",
+        "18"
+      ]
+    },
+    {
+      "id": 29,
+      "nama": "A11.4429",
+      "matakuliahId": 19,
+      "dosenId": 30,
+      "mata_kuliah_id": "19",
+      "dosen_id": "30",
+      "mahasiswa_ids": [
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": 30,
+      "nama": "A11.4430",
+      "matakuliahId": 49,
+      "dosenId": 7,
+      "mata_kuliah_id": "49",
+      "dosen_id": "7",
+      "mahasiswa_ids": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": 31,
+      "nama": "A11.4431",
+      "matakuliahId": 41,
+      "dosenId": 41,
+      "mata_kuliah_id": "41",
+      "dosen_id": "41",
+      "mahasiswa_ids": [
+        "14",
+        "19"
+      ]
+    },
+    {
+      "id": 32,
+      "nama": "A11.4432",
+      "matakuliahId": 47,
+      "dosenId": 18,
+      "mata_kuliah_id": "47",
+      "dosen_id": "18",
+      "mahasiswa_ids": [
+        "17",
+        "6"
+      ]
+    },
+    {
+      "id": 33,
+      "nama": "A11.4433",
+      "matakuliahId": 21,
+      "dosenId": 42,
+      "mata_kuliah_id": "21",
+      "dosen_id": "42",
+      "mahasiswa_ids": [
+        "20",
+        "13"
+      ]
+    },
+    {
+      "id": 34,
+      "nama": "A11.4434",
+      "matakuliahId": 34,
+      "dosenId": 15,
+      "mata_kuliah_id": "34",
+      "dosen_id": "15",
+      "mahasiswa_ids": [
+        "3",
+        "20"
+      ]
+    },
+    {
+      "id": 35,
+      "nama": "A11.4435",
+      "matakuliahId": 14,
+      "dosenId": 17,
+      "mata_kuliah_id": "14",
+      "dosen_id": "17",
+      "mahasiswa_ids": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "id": 36,
+      "nama": "A11.4436",
+      "matakuliahId": 20,
+      "dosenId": 25,
+      "mata_kuliah_id": "20",
+      "dosen_id": "25",
+      "mahasiswa_ids": [
+        "9",
+        "14"
+      ]
+    },
+    {
+      "id": 37,
+      "nama": "A11.4437",
+      "matakuliahId": 30,
+      "dosenId": 17,
+      "mata_kuliah_id": "30",
+      "dosen_id": "17",
+      "mahasiswa_ids": [
+        "12",
+        "21"
+      ]
+    },
+    {
+      "id": 38,
+      "nama": "A11.4438",
+      "matakuliahId": 34,
+      "dosenId": 27,
+      "mata_kuliah_id": "34",
+      "dosen_id": "27",
+      "mahasiswa_ids": [
+        "15",
+        "8"
+      ]
+    },
+    {
+      "id": 39,
+      "nama": "A11.4439",
+      "matakuliahId": 27,
+      "dosenId": 41,
+      "mata_kuliah_id": "27",
+      "dosen_id": "41",
+      "mahasiswa_ids": [
+        "18",
+        "15"
+      ]
+    },
+    {
+      "id": 40,
+      "nama": "A11.4440",
+      "matakuliahId": 31,
+      "dosenId": 3,
+      "mata_kuliah_id": "31",
+      "dosen_id": "3",
+      "mahasiswa_ids": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": 41,
+      "nama": "A11.4441",
+      "matakuliahId": 30,
+      "dosenId": 51,
+      "mata_kuliah_id": "30",
+      "dosen_id": "51",
+      "mahasiswa_ids": [
+        "4",
+        "9"
+      ]
+    },
+    {
+      "id": 42,
+      "nama": "A11.4442",
+      "matakuliahId": 39,
+      "dosenId": 32,
+      "mata_kuliah_id": "39",
+      "dosen_id": "32",
+      "mahasiswa_ids": [
+        "7",
+        "16"
+      ]
+    },
+    {
+      "id": 43,
+      "nama": "A11.4443",
+      "matakuliahId": 45,
+      "dosenId": 51,
+      "mata_kuliah_id": "45",
+      "dosen_id": "51",
+      "mahasiswa_ids": [
+        "10",
+        "3"
+      ]
+    },
+    {
+      "id": 44,
+      "nama": "A11.4444",
+      "matakuliahId": 30,
+      "dosenId": 49,
+      "mata_kuliah_id": "30",
+      "dosen_id": "49",
+      "mahasiswa_ids": [
+        "13",
+        "10"
+      ]
+    },
+    {
+      "id": 45,
+      "nama": "A11.4445",
+      "matakuliahId": 4,
+      "dosenId": 32,
+      "mata_kuliah_id": "4",
+      "dosen_id": "32",
+      "mahasiswa_ids": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "id": 46,
+      "nama": "A11.4446",
+      "matakuliahId": 43,
+      "dosenId": 36,
+      "mata_kuliah_id": "43",
+      "dosen_id": "36",
+      "mahasiswa_ids": [
+        "19",
+        "4"
+      ]
+    },
+    {
+      "id": 47,
+      "nama": "A11.4447",
+      "matakuliahId": 45,
+      "dosenId": 29,
+      "mata_kuliah_id": "45",
+      "dosen_id": "29",
+      "mahasiswa_ids": [
+        "2",
+        "11"
+      ]
+    },
+    {
+      "id": 48,
+      "nama": "A11.4448",
+      "matakuliahId": 18,
+      "dosenId": 15,
+      "mata_kuliah_id": "18",
+      "dosen_id": "15",
+      "mahasiswa_ids": [
+        "5",
+        "18"
+      ]
+    },
+    {
+      "id": 49,
+      "nama": "A11.4449",
+      "matakuliahId": 24,
+      "dosenId": 1,
+      "mata_kuliah_id": "24",
+      "dosen_id": "1",
+      "mahasiswa_ids": [
+        "8",
+        "5"
+      ]
+    },
+    {
+      "id": 50,
+      "nama": "A11.4450",
+      "matakuliahId": 5,
+      "dosenId": 26,
+      "mata_kuliah_id": "5",
+      "dosen_id": "26",
+      "mahasiswa_ids": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "id": 51,
+      "nama": "A11.4451",
+      "matakuliahId": 44,
+      "dosenId": 9,
+      "mata_kuliah_id": "44",
+      "dosen_id": "9",
+      "mahasiswa_ids": [
+        "14",
+        "19"
+      ]
+    },
+    {
+      "id": 52,
+      "nama": "A11.4452",
+      "matakuliahId": 4,
+      "dosenId": 40,
+      "mata_kuliah_id": "4",
+      "dosen_id": "40",
+      "mahasiswa_ids": [
+        "17",
+        "6"
+      ]
+    }
+  ],
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nama": "Fitri Wijaya",
+      "nim": "A11.2024.00001",
+      "max_sks": 24
+    },
+    {
+      "id": 2,
+      "nama": "Ira Kusuma",
+      "nim": "A11.2024.00002",
+      "max_sks": 20
+    },
+    {
+      "id": 3,
+      "nama": "Cahyo Hidayat",
+      "nim": "A11.2024.00003",
+      "max_sks": 24
+    },
+    {
+      "id": 4,
+      "nama": "Citra Kusuma",
+      "nim": "A11.2024.00004",
+      "max_sks": 20
+    },
+    {
+      "id": 5,
+      "nama": "Eko Lestari",
+      "nim": "A11.2024.00005",
+      "max_sks": 24
+    },
+    {
+      "id": 6,
+      "nama": "Jamil Setiawan",
+      "nim": "A11.2024.00006",
+      "max_sks": 20
+    },
+    {
+      "id": 7,
+      "nama": "Wulan Saputra",
+      "nim": "A11.2024.00007",
+      "max_sks": 24
+    },
+    {
+      "id": 8,
+      "nama": "Fajar Saputra",
+      "nim": "A11.2024.00008",
+      "max_sks": 20
+    },
+    {
+      "id": 9,
+      "nama": "Lestari Kusuma",
+      "nim": "A11.2024.00009",
+      "max_sks": 24
+    },
+    {
+      "id": 10,
+      "nama": "Kartika Wijaya",
+      "nim": "A11.2024.00010",
+      "max_sks": 20
+    },
+    {
+      "id": 11,
+      "nama": "Sari Wijaya",
+      "nim": "A11.2024.00011",
+      "max_sks": 24
+    },
+    {
+      "id": 12,
+      "nama": "Dina Setiawan",
+      "nim": "A11.2024.00012",
+      "max_sks": 20
+    },
+    {
+      "id": 13,
+      "nama": "Joko Purnama",
+      "nim": "A11.2024.00013",
+      "max_sks": 24
+    },
+    {
+      "id": 14,
+      "nama": "Fitri Purnama",
+      "nim": "A11.2024.00014",
+      "max_sks": 20
+    },
+    {
+      "id": 15,
+      "nama": "Jamil Sari",
+      "nim": "A11.2024.00015",
+      "max_sks": 24
+    },
+    {
+      "id": 16,
+      "nama": "Lestari Kusuma",
+      "nim": "A11.2024.00016",
+      "max_sks": 20
+    },
+    {
+      "id": 17,
+      "nama": "Sari Lestari",
+      "nim": "A11.2024.00017",
+      "max_sks": 24
+    },
+    {
+      "id": 18,
+      "nama": "Intan Wijaya",
+      "nim": "A11.2024.00018",
+      "max_sks": 20
+    },
+    {
+      "id": 19,
+      "nama": "Joko Wijaya",
+      "nim": "A11.2024.00019",
+      "max_sks": 24
+    },
+    {
+      "id": 20,
+      "nama": "Hendra Hidayat",
+      "nim": "A11.2024.00020",
+      "max_sks": 20
+    },
+    {
+      "id": 21,
+      "nama": "Kartika Wijaya",
+      "nim": "A11.2024.00021",
+      "max_sks": 24
+    },
+    {
+      "id": 22,
+      "nama": "Intan Pratama",
+      "nim": "A11.2024.00022",
+      "max_sks": 20
+    },
+    {
+      "id": 23,
+      "nama": "Andi Rahman",
+      "nim": "A11.2024.00023",
+      "max_sks": 24
+    },
+    {
+      "id": 24,
+      "nama": "Eko Hidayat",
+      "nim": "A11.2024.00024",
+      "max_sks": 20
+    },
+    {
+      "id": 25,
+      "nama": "Agus Purnama",
+      "nim": "A11.2024.00025",
+      "max_sks": 24
+    },
+    {
+      "id": 26,
+      "nama": "Intan Pratama",
+      "nim": "A11.2024.00026",
+      "max_sks": 20
+    },
+    {
+      "id": 27,
+      "nama": "Hadi Wijaya",
+      "nim": "A11.2024.00027",
+      "max_sks": 24
+    },
+    {
+      "id": 28,
+      "nama": "Budi Pratama",
+      "nim": "A11.2024.00028",
+      "max_sks": 20
+    },
+    {
+      "id": 29,
+      "nama": "Sari Setiawan",
+      "nim": "A11.2024.00029",
+      "max_sks": 24
+    },
+    {
+      "id": 30,
+      "nama": "Dewi Saputra",
+      "nim": "A11.2024.00030",
+      "max_sks": 20
+    },
+    {
+      "id": 31,
+      "nama": "Fajar Wijaya",
+      "nim": "A11.2024.00031",
+      "max_sks": 24
+    },
+    {
+      "id": 32,
+      "nama": "Dina Wijaya",
+      "nim": "A11.2024.00032",
+      "max_sks": 20
+    },
+    {
+      "id": 33,
+      "nama": "Dewi Rahman",
+      "nim": "A11.2024.00033",
+      "max_sks": 24
+    },
+    {
+      "id": 34,
+      "nama": "Kartika Sari",
+      "nim": "A11.2024.00034",
+      "max_sks": 20
+    },
+    {
+      "id": 35,
+      "nama": "Putri Sari",
+      "nim": "A11.2024.00035",
+      "max_sks": 24
+    },
+    {
+      "id": 36,
+      "nama": "Sari Pratama",
+      "nim": "A11.2024.00036",
+      "max_sks": 20
+    },
+    {
+      "id": 37,
+      "nama": "Fajar Setiawan",
+      "nim": "A11.2024.00037",
+      "max_sks": 24
+    },
+    {
+      "id": 38,
+      "nama": "Galih Lestari",
+      "nim": "A11.2024.00038",
+      "max_sks": 20
+    },
+    {
+      "id": 39,
+      "nama": "Eko Sari",
+      "nim": "A11.2024.00039",
+      "max_sks": 24
+    },
+    {
+      "id": 40,
+      "nama": "Dewi Rahman",
+      "nim": "A11.2024.00040",
+      "max_sks": 20
+    },
+    {
+      "id": 41,
+      "nama": "Fajar Kusuma",
+      "nim": "A11.2024.00041",
+      "max_sks": 24
+    },
+    {
+      "id": 42,
+      "nama": "Kartika Rahman",
+      "nim": "A11.2024.00042",
+      "max_sks": 20
+    },
+    {
+      "id": 43,
+      "nama": "Rizki Pratama",
+      "nim": "A11.2024.00043",
+      "max_sks": 24
+    },
+    {
+      "id": 44,
+      "nama": "Kartika Rahman",
+      "nim": "A11.2024.00044",
+      "max_sks": 20
+    },
+    {
+      "id": 45,
+      "nama": "Joko Lestari",
+      "nim": "A11.2024.00045",
+      "max_sks": 24
+    },
+    {
+      "id": 46,
+      "nama": "Galih Kusuma",
+      "nim": "A11.2024.00046",
+      "max_sks": 20
+    },
+    {
+      "id": 47,
+      "nama": "Lestari Purnama",
+      "nim": "A11.2024.00047",
+      "max_sks": 24
+    },
+    {
+      "id": 48,
+      "nama": "Hendra Purnama",
+      "nim": "A11.2024.00048",
+      "max_sks": 20
+    },
+    {
+      "id": 49,
+      "nama": "Ira Pratama",
+      "nim": "A11.2024.00049",
+      "max_sks": 24
+    },
+    {
+      "id": 50,
+      "nama": "Eka Pratama",
+      "nim": "A11.2024.00050",
+      "max_sks": 20
+    },
+    {
+      "id": 51,
+      "nama": "Budi Hidayat",
+      "nim": "A11.2024.00051",
+      "max_sks": 24
+    },
+    {
+      "id": 52,
+      "nama": "Sari Wijaya",
+      "nim": "A11.2024.00052",
+      "max_sks": 20
+    },
+    {
+      "id": 53,
+      "nama": "Kartika Wijaya",
+      "nim": "A11.2024.00053",
+      "max_sks": 24
+    },
+    {
+      "id": 54,
+      "nama": "Wulan Setiawan",
+      "nim": "A11.2024.00054",
+      "max_sks": 20
+    },
+    {
+      "id": 55,
+      "nama": "Fajar Sari",
+      "nim": "A11.2024.00055",
+      "max_sks": 24
+    },
+    {
+      "id": 56,
+      "nama": "Fajar Lestari",
+      "nim": "A11.2024.00056",
+      "max_sks": 20
+    },
+    {
+      "id": 57,
+      "nama": "Tono Setiawan",
+      "nim": "A11.2024.00057",
+      "max_sks": 24
+    },
+    {
+      "id": 58,
+      "nama": "Eka Lestari",
+      "nim": "A11.2024.00058",
+      "max_sks": 20
+    },
+    {
+      "id": 59,
+      "nama": "Cahyo Hidayat",
+      "nim": "A11.2024.00059",
+      "max_sks": 24
+    },
+    {
+      "id": 60,
+      "nama": "Budi Hidayat",
+      "nim": "A11.2024.00060",
+      "max_sks": 20
+    },
+    {
+      "id": 61,
+      "nama": "Hadi Pratama",
+      "nim": "A11.2024.00061",
+      "max_sks": 24
+    },
+    {
+      "id": 62,
+      "nama": "Eko Sari",
+      "nim": "A11.2024.00062",
+      "max_sks": 20
+    },
+    {
+      "id": 63,
+      "nama": "Fitri Lestari",
+      "nim": "A11.2024.00063",
+      "max_sks": 24
+    },
+    {
+      "id": 64,
+      "nama": "Dina Purnama",
+      "nim": "A11.2024.00064",
+      "max_sks": 20
+    },
+    {
+      "id": 65,
+      "nama": "Lestari Saputra",
+      "nim": "A11.2024.00065",
+      "max_sks": 24
+    },
+    {
+      "id": 66,
+      "nama": "Wulan Rahman",
+      "nim": "A11.2024.00066",
+      "max_sks": 20
+    },
+    {
+      "id": 67,
+      "nama": "Fitri Sari",
+      "nim": "A11.2024.00067",
+      "max_sks": 24
+    },
+    {
+      "id": 68,
+      "nama": "Andi Setiawan",
+      "nim": "A11.2024.00068",
+      "max_sks": 20
+    },
+    {
+      "id": 69,
+      "nama": "Cahyo Hidayat",
+      "nim": "A11.2024.00069",
+      "max_sks": 24
+    },
+    {
+      "id": 70,
+      "nama": "Fajar Saputra",
+      "nim": "A11.2024.00070",
+      "max_sks": 20
+    },
+    {
+      "id": 71,
+      "nama": "Sari Lestari",
+      "nim": "A11.2024.00071",
+      "max_sks": 24
+    },
+    {
+      "id": 72,
+      "nama": "Eko Sari",
+      "nim": "A11.2024.00072",
+      "max_sks": 20
+    },
+    {
+      "id": 73,
+      "nama": "Sari Setiawan",
+      "nim": "A11.2024.00073",
+      "max_sks": 24
+    },
+    {
+      "id": 74,
+      "nama": "Putri Pratama",
+      "nim": "A11.2024.00074",
+      "max_sks": 20
+    },
+    {
+      "id": 75,
+      "nama": "Andi Lestari",
+      "nim": "A11.2024.00075",
+      "max_sks": 24
+    },
+    {
+      "id": 76,
+      "nama": "Dina Sari",
+      "nim": "A11.2024.00076",
+      "max_sks": 20
+    },
+    {
+      "id": 77,
+      "nama": "Gita Wijaya",
+      "nim": "A11.2024.00077",
+      "max_sks": 24
+    },
+    {
+      "id": 78,
+      "nama": "Dewi Hidayat",
+      "nim": "A11.2024.00078",
+      "max_sks": 20
+    },
+    {
+      "id": 79,
+      "nama": "Eko Pratama",
+      "nim": "A11.2024.00079",
+      "max_sks": 24
+    },
+    {
+      "id": 80,
+      "nama": "Eko Setiawan",
+      "nim": "A11.2024.00080",
+      "max_sks": 20
+    },
+    {
+      "id": 81,
+      "nama": "Niko Saputra",
+      "nim": "A11.2024.00081",
+      "max_sks": 24
+    },
+    {
+      "id": 82,
+      "nama": "Oka Purnama",
+      "nim": "A11.2024.00082",
+      "max_sks": 20
+    },
+    {
+      "id": 83,
+      "nama": "Kartika Rahman",
+      "nim": "A11.2024.00083",
+      "max_sks": 24
+    },
+    {
+      "id": 84,
+      "nama": "Fitri Purnama",
+      "nim": "A11.2024.00084",
+      "max_sks": 20
+    },
+    {
+      "id": 85,
+      "nama": "Bambang Saputra",
+      "nim": "A11.2024.00085",
+      "max_sks": 24
+    },
+    {
+      "id": 86,
+      "nama": "Wulan Saputra",
+      "nim": "A11.2024.00086",
+      "max_sks": 20
+    },
+    {
+      "id": 87,
+      "nama": "Hendra Purnama",
+      "nim": "A11.2024.00087",
+      "max_sks": 24
+    },
+    {
+      "id": 88,
+      "nama": "Agus Purnama",
+      "nim": "A11.2024.00088",
+      "max_sks": 20
+    },
+    {
+      "id": 89,
+      "nama": "Dina Setiawan",
+      "nim": "A11.2024.00089",
+      "max_sks": 24
+    },
+    {
+      "id": 90,
+      "nama": "Intan Saputra",
+      "nim": "A11.2024.00090",
+      "max_sks": 20
+    },
+    {
+      "id": 91,
+      "nama": "Gita Kusuma",
+      "nim": "A11.2024.00091",
+      "max_sks": 24
+    },
+    {
+      "id": 92,
+      "nama": "Galih Kusuma",
+      "nim": "A11.2024.00092",
+      "max_sks": 20
+    },
+    {
+      "id": 93,
+      "nama": "Kartika Hidayat",
+      "nim": "A11.2024.00093",
+      "max_sks": 24
+    },
+    {
+      "id": 94,
+      "nama": "Hadi Kusuma",
+      "nim": "A11.2024.00094",
+      "max_sks": 20
+    },
+    {
+      "id": 95,
+      "nama": "Hadi Hidayat",
+      "nim": "A11.2024.00095",
+      "max_sks": 24
+    },
+    {
+      "id": 96,
+      "nama": "Kartika Purnama",
+      "nim": "A11.2024.00096",
+      "max_sks": 20
+    },
+    {
+      "id": 97,
+      "nama": "Rizki Rahman",
+      "nim": "A11.2024.00097",
+      "max_sks": 24
+    },
+    {
+      "id": 98,
+      "nama": "Bambang Hidayat",
+      "nim": "A11.2024.00098",
+      "max_sks": 20
+    },
+    {
+      "id": 99,
+      "nama": "Budi Sari",
+      "nim": "A11.2024.00099",
+      "max_sks": 24
+    },
+    {
+      "id": 100,
+      "nama": "Fajar Wijaya",
+      "nim": "A11.2024.00100",
+      "max_sks": 20
+    }
+  ],
+  "matakuliah": [
+    {
+      "id": 1,
+      "kode": "A11.05401",
+      "nama": "Pemrograman Sisi Klien",
+      "sks": 3
+    },
+    {
+      "id": 2,
+      "kode": "A11.05402",
+      "nama": "Rekayasa Perangkat Lunak",
+      "sks": 4
+    },
+    {
+      "id": 3,
+      "kode": "A11.05403",
+      "nama": "Kriptografi",
+      "sks": 2
+    },
+    {
+      "id": 4,
+      "kode": "A11.05404",
+      "nama": "Mata Kuliah Fiktif 1",
+      "sks": 3
+    },
+    {
+      "id": 5,
+      "kode": "A11.05405",
+      "nama": "Mata Kuliah Fiktif 2",
+      "sks": 3
+    },
+    {
+      "id": 6,
+      "kode": "A11.05406",
+      "nama": "Mata Kuliah Fiktif 3",
+      "sks": 2
+    },
+    {
+      "id": 7,
+      "kode": "A11.05407",
+      "nama": "Mata Kuliah Fiktif 4",
+      "sks": 4
+    },
+    {
+      "id": 8,
+      "kode": "A11.05408",
+      "nama": "Mata Kuliah Fiktif 5",
+      "sks": 4
+    },
+    {
+      "id": 9,
+      "kode": "A11.05409",
+      "nama": "Mata Kuliah Fiktif 6",
+      "sks": 2
+    },
+    {
+      "id": 10,
+      "kode": "A11.05410",
+      "nama": "Mata Kuliah Fiktif 7",
+      "sks": 4
+    },
+    {
+      "id": 11,
+      "kode": "A11.05411",
+      "nama": "Mata Kuliah Fiktif 8",
+      "sks": 3
+    },
+    {
+      "id": 12,
+      "kode": "A11.05412",
+      "nama": "Mata Kuliah Fiktif 9",
+      "sks": 4
+    },
+    {
+      "id": 13,
+      "kode": "A11.05413",
+      "nama": "Mata Kuliah Fiktif 10",
+      "sks": 3
+    },
+    {
+      "id": 14,
+      "kode": "A11.05414",
+      "nama": "Mata Kuliah Fiktif 11",
+      "sks": 4
+    },
+    {
+      "id": 15,
+      "kode": "A11.05415",
+      "nama": "Mata Kuliah Fiktif 12",
+      "sks": 4
+    },
+    {
+      "id": 16,
+      "kode": "A11.05416",
+      "nama": "Mata Kuliah Fiktif 13",
+      "sks": 2
+    },
+    {
+      "id": 17,
+      "kode": "A11.05417",
+      "nama": "Mata Kuliah Fiktif 14",
+      "sks": 3
+    },
+    {
+      "id": 18,
+      "kode": "A11.05418",
+      "nama": "Mata Kuliah Fiktif 15",
+      "sks": 4
+    },
+    {
+      "id": 19,
+      "kode": "A11.05419",
+      "nama": "Mata Kuliah Fiktif 16",
+      "sks": 4
+    },
+    {
+      "id": 20,
+      "kode": "A11.05420",
+      "nama": "Mata Kuliah Fiktif 17",
+      "sks": 2
+    },
+    {
+      "id": 21,
+      "kode": "A11.05421",
+      "nama": "Mata Kuliah Fiktif 18",
+      "sks": 2
+    },
+    {
+      "id": 22,
+      "kode": "A11.05422",
+      "nama": "Mata Kuliah Fiktif 19",
+      "sks": 2
+    },
+    {
+      "id": 23,
+      "kode": "A11.05423",
+      "nama": "Mata Kuliah Fiktif 20",
+      "sks": 3
+    },
+    {
+      "id": 24,
+      "kode": "A11.05424",
+      "nama": "Mata Kuliah Fiktif 21",
+      "sks": 2
+    },
+    {
+      "id": 25,
+      "kode": "A11.05425",
+      "nama": "Mata Kuliah Fiktif 22",
+      "sks": 3
+    },
+    {
+      "id": 26,
+      "kode": "A11.05426",
+      "nama": "Mata Kuliah Fiktif 23",
+      "sks": 4
+    },
+    {
+      "id": 27,
+      "kode": "A11.05427",
+      "nama": "Mata Kuliah Fiktif 24",
+      "sks": 2
+    },
+    {
+      "id": 28,
+      "kode": "A11.05428",
+      "nama": "Mata Kuliah Fiktif 25",
+      "sks": 3
+    },
+    {
+      "id": 29,
+      "kode": "A11.05429",
+      "nama": "Mata Kuliah Fiktif 26",
+      "sks": 4
+    },
+    {
+      "id": 30,
+      "kode": "A11.05430",
+      "nama": "Mata Kuliah Fiktif 27",
+      "sks": 4
+    },
+    {
+      "id": 31,
+      "kode": "A11.05431",
+      "nama": "Mata Kuliah Fiktif 28",
+      "sks": 2
+    },
+    {
+      "id": 32,
+      "kode": "A11.05432",
+      "nama": "Mata Kuliah Fiktif 29",
+      "sks": 4
+    },
+    {
+      "id": 33,
+      "kode": "A11.05433",
+      "nama": "Mata Kuliah Fiktif 30",
+      "sks": 2
+    },
+    {
+      "id": 34,
+      "kode": "A11.05434",
+      "nama": "Mata Kuliah Fiktif 31",
+      "sks": 3
+    },
+    {
+      "id": 35,
+      "kode": "A11.05435",
+      "nama": "Mata Kuliah Fiktif 32",
+      "sks": 2
+    },
+    {
+      "id": 36,
+      "kode": "A11.05436",
+      "nama": "Mata Kuliah Fiktif 33",
+      "sks": 4
+    },
+    {
+      "id": 37,
+      "kode": "A11.05437",
+      "nama": "Mata Kuliah Fiktif 34",
+      "sks": 4
+    },
+    {
+      "id": 38,
+      "kode": "A11.05438",
+      "nama": "Mata Kuliah Fiktif 35",
+      "sks": 3
+    },
+    {
+      "id": 39,
+      "kode": "A11.05439",
+      "nama": "Mata Kuliah Fiktif 36",
+      "sks": 3
+    },
+    {
+      "id": 40,
+      "kode": "A11.05440",
+      "nama": "Mata Kuliah Fiktif 37",
+      "sks": 4
+    },
+    {
+      "id": 41,
+      "kode": "A11.05441",
+      "nama": "Mata Kuliah Fiktif 38",
+      "sks": 3
+    },
+    {
+      "id": 42,
+      "kode": "A11.05442",
+      "nama": "Mata Kuliah Fiktif 39",
+      "sks": 2
+    },
+    {
+      "id": 43,
+      "kode": "A11.05443",
+      "nama": "Mata Kuliah Fiktif 40",
+      "sks": 3
+    },
+    {
+      "id": 44,
+      "kode": "A11.05444",
+      "nama": "Mata Kuliah Fiktif 41",
+      "sks": 3
+    },
+    {
+      "id": 45,
+      "kode": "A11.05445",
+      "nama": "Mata Kuliah Fiktif 42",
+      "sks": 2
+    },
+    {
+      "id": 46,
+      "kode": "A11.05446",
+      "nama": "Mata Kuliah Fiktif 43",
+      "sks": 4
+    },
+    {
+      "id": 47,
+      "kode": "A11.05447",
+      "nama": "Mata Kuliah Fiktif 44",
+      "sks": 3
+    },
+    {
+      "id": 48,
+      "kode": "A11.05448",
+      "nama": "Mata Kuliah Fiktif 45",
+      "sks": 2
+    },
+    {
+      "id": 49,
+      "kode": "A11.05449",
+      "nama": "Mata Kuliah Fiktif 46",
+      "sks": 3
+    },
+    {
+      "id": 50,
+      "kode": "A11.05450",
+      "nama": "Mata Kuliah Fiktif 47",
+      "sks": 2
+    },
+    {
+      "id": 51,
+      "kode": "A11.05451",
+      "nama": "Mata Kuliah Fiktif 48",
+      "sks": 3
+    },
+    {
+      "id": 52,
+      "kode": "A11.05452",
+      "nama": "Mata Kuliah Fiktif 49",
+      "sks": 3
+    },
+    {
+      "id": 53,
+      "kode": "A11.05453",
+      "nama": "Mata Kuliah Fiktif 50",
+      "sks": 3
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "Admin 1",
+      "email": "admin@mail.com",
+      "password": "admin123",
+      "role": "Admin",
+      "permission": [
+        "mahasiswa.create",
+        "mahasiswa.read",
+        "mahasiswa.update",
+        "mahasiswa.delete",
+        "dosen.create",
+        "dosen.read",
+        "dosen.update",
+        "dosen.delete",
+        "users.manage",
+        "matakuliah.create",
+        "matakuliah.read",
+        "matakuliah.update",
+        "matakuliah.delete",
+        "kelas.create",
+        "kelas.read",
+        "kelas.update",
+        "kelas.delete",
+        "rencana-studi.read",
+        "rencana-studi.create",
+        "rencana-studi.update",
+        "rencana-studi.delete"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Mahasiswa 1",
+      "email": "mahasiswa@mail.com",
+      "password": "mahasiswa123",
+      "role": "Mahasiswa",
+      "permission": [
+        "mahasiswa.read",
+        "dosen.read",
+        "matakuliah.read",
+        "kelas.read",
+        "rencana-studi.read"
+      ]
+    }
+  ]
+}

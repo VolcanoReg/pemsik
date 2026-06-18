@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "kode": "A11.05401",
+    "nama": "Pemrograman Sisi Klien",
+    "sks": 3
+  },
+  {
+    "id": 2,
+    "kode": "A11.05402",
+    "nama": "Rekayasa Perangkat Lunak",
+    "sks": 4
+  },
+  {
+    "id": 3,
+    "kode": "A11.05403",
+    "nama": "Kriptografi",
+    "sks": 2
+  },
+  {
+    "id": 4,
+    "kode": "A11.05404",
+    "nama": "Mata Kuliah Fiktif 1",
+    "sks": 3
+  },
+  {
+    "id": 5,
+    "kode": "A11.05405",
+    "nama": "Mata Kuliah Fiktif 2",
+    "sks": 3
+  },
+  {
+    "id": 6,
+    "kode": "A11.05406",
+    "nama": "Mata Kuliah Fiktif 3",
+    "sks": 2
+  },
+  {
+    "id": 7,
+    "kode": "A11.05407",
+    "nama": "Mata Kuliah Fiktif 4",
+    "sks": 4
+  },
+  {
+    "id": 8,
+    "kode": "A11.05408",
+    "nama": "Mata Kuliah Fiktif 5",
+    "sks": 4
+  },
+  {
+    "id": 9,
+    "kode": "A11.05409",
+    "nama": "Mata Kuliah Fiktif 6",
+    "sks": 2
+  },
+  {
+    "id": 10,
+    "kode": "A11.05410",
+    "nama": "Mata Kuliah Fiktif 7",
+    "sks": 4
+  },
+  {
+    "id": 11,
+    "kode": "A11.05411",
+    "nama": "Mata Kuliah Fiktif 8",
+    "sks": 3
+  },
+  {
+    "id": 12,
+    "kode": "A11.05412",
+    "nama": "Mata Kuliah Fiktif 9",
+    "sks": 4
+  },
+  {
+    "id": 13,
+    "kode": "A11.05413",
+    "nama": "Mata Kuliah Fiktif 10",
+    "sks": 3
+  },
+  {
+    "id": 14,
+    "kode": "A11.05414",
+    "nama": "Mata Kuliah Fiktif 11",
+    "sks": 4
+  },
+  {
+    "id": 15,
+    "kode": "A11.05415",
+    "nama": "Mata Kuliah Fiktif 12",
+    "sks": 4
+  },
+  {
+    "id": 16,
+    "kode": "A11.05416",
+    "nama": "Mata Kuliah Fiktif 13",
+    "sks": 2
+  },
+  {
+    "id": 17,
+    "kode": "A11.05417",
+    "nama": "Mata Kuliah Fiktif 14",
+    "sks": 3
+  },
+  {
+    "id": 18,
+    "kode": "A11.05418",
+    "nama": "Mata Kuliah Fiktif 15",
+    "sks": 4
+  },
+  {
+    "id": 19,
+    "kode": "A11.05419",
+    "nama": "Mata Kuliah Fiktif 16",
+    "sks": 4
+  },
+  {
+    "id": 20,
+    "kode": "A11.05420",
+    "nama": "Mata Kuliah Fiktif 17",
+    "sks": 2
+  },
+  {
+    "id": 21,
+    "kode": "A11.05421",
+    "nama": "Mata Kuliah Fiktif 18",
+    "sks": 2
+  },
+  {
+    "id": 22,
+    "kode": "A11.05422",
+    "nama": "Mata Kuliah Fiktif 19",
+    "sks": 2
+  },
+  {
+    "id": 23,
+    "kode": "A11.05423",
+    "nama": "Mata Kuliah Fiktif 20",
+    "sks": 3
+  },
+  {
+    "id": 24,
+    "kode": "A11.05424",
+    "nama": "Mata Kuliah Fiktif 21",
+    "sks": 2
+  },
+  {
+    "id": 25,
+    "kode": "A11.05425",
+    "nama": "Mata Kuliah Fiktif 22",
+    "sks": 3
+  },
+  {
+    "id": 26,
+    "kode": "A11.05426",
+    "nama": "Mata Kuliah Fiktif 23",
+    "sks": 4
+  },
+  {
+    "id": 27,
+    "kode": "A11.05427",
+    "nama": "Mata Kuliah Fiktif 24",
+    "sks": 2
+  },
+  {
+    "id": 28,
+    "kode": "A11.05428",
+    "nama": "Mata Kuliah Fiktif 25",
+    "sks": 3
+  },
+  {
+    "id": 29,
+    "kode": "A11.05429",
+    "nama": "Mata Kuliah Fiktif 26",
+    "sks": 4
+  },
+  {
+    "id": 30,
+    "kode": "A11.05430",
+    "nama": "Mata Kuliah Fiktif 27",
+    "sks": 4
+  },
+  {
+    "id": 31,
+    "kode": "A11.05431",
+    "nama": "Mata Kuliah Fiktif 28",
+    "sks": 2
+  },
+  {
+    "id": 32,
+    "kode": "A11.05432",
+    "nama": "Mata Kuliah Fiktif 29",
+    "sks": 4
+  },
+  {
+    "id": 33,
+    "kode": "A11.05433",
+    "nama": "Mata Kuliah Fiktif 30",
+    "sks": 2
+  },
+  {
+    "id": 34,
+    "kode": "A11.05434",
+    "nama": "Mata Kuliah Fiktif 31",
+    "sks": 3
+  },
+  {
+    "id": 35,
+    "kode": "A11.05435",
+    "nama": "Mata Kuliah Fiktif 32",
+    "sks": 2
+  },
+  {
+    "id": 36,
+    "kode": "A11.05436",
+    "nama": "Mata Kuliah Fiktif 33",
+    "sks": 4
+  },
+  {
+    "id": 37,
+    "kode": "A11.05437",
+    "nama": "Mata Kuliah Fiktif 34",
+    "sks": 4
+  },
+  {
+    "id": 38,
+    "kode": "A11.05438",
+    "nama": "Mata Kuliah Fiktif 35",
+    "sks": 3
+  },
+  {
+    "id": 39,
+    "kode": "A11.05439",
+    "nama": "Mata Kuliah Fiktif 36",
+    "sks": 3
+  },
+  {
+    "id": 40,
+    "kode": "A11.05440",
+    "nama": "Mata Kuliah Fiktif 37",
+    "sks": 4
+  },
+  {
+    "id": 41,
+    "kode": "A11.05441",
+    "nama": "Mata Kuliah Fiktif 38",
+    "sks": 3
+  },
+  {
+    "id": 42,
+    "kode": "A11.05442",
+    "nama": "Mata Kuliah Fiktif 39",
+    "sks": 2
+  },
+  {
+    "id": 43,
+    "kode": "A11.05443",
+    "nama": "Mata Kuliah Fiktif 40",
+    "sks": 3
+  },
+  {
+    "id": 44,
+    "kode": "A11.05444",
+    "nama": "Mata Kuliah Fiktif 41",
+    "sks": 3
+  },
+  {
+    "id": 45,
+    "kode": "A11.05445",
+    "nama": "Mata Kuliah Fiktif 42",
+    "sks": 2
+  },
+  {
+    "id": 46,
+    "kode": "A11.05446",
+    "nama": "Mata Kuliah Fiktif 43",
+    "sks": 4
+  },
+  {
+    "id": 47,
+    "kode": "A11.05447",
+    "nama": "Mata Kuliah Fiktif 44",
+    "sks": 3
+  },
+  {
+    "id": 48,
+    "kode": "A11.05448",
+    "nama": "Mata Kuliah Fiktif 45",
+    "sks": 2
+  },
+  {
+    "id": 49,
+    "kode": "A11.05449",
+    "nama": "Mata Kuliah Fiktif 46",
+    "sks": 3
+  },
+  {
+    "id": 50,
+    "kode": "A11.05450",
+    "nama": "Mata Kuliah Fiktif 47",
+    "sks": 2
+  },
+  {
+    "id": 51,
+    "kode": "A11.05451",
+    "nama": "Mata Kuliah Fiktif 48",
+    "sks": 3
+  },
+  {
+    "id": 52,
+    "kode": "A11.05452",
+    "nama": "Mata Kuliah Fiktif 49",
+    "sks": 3
+  },
+  {
+    "id": 53,
+    "kode": "A11.05453",
+    "nama": "Mata Kuliah Fiktif 50",
+    "sks": 3
+  }
+]

@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "nama": "Fitri Wijaya",
+        "nim": "A11.2024.00001",
+        "max_sks": 24
+    },
+    {
+        "id": 2,
+        "nama": "Ira Kusuma",
+        "nim": "A11.2024.00002",
+        "max_sks": 20
+    },
+    {
+        "id": 3,
+        "nama": "Cahyo Hidayat",
+        "nim": "A11.2024.00003",
+        "max_sks": 24
+    },
+    {
+        "id": 4,
+        "nama": "Citra Kusuma",
+        "nim": "A11.2024.00004",
+        "max_sks": 20
+    },
+    {
+        "id": 5,
+        "nama": "Eko Lestari",
+        "nim": "A11.2024.00005",
+        "max_sks": 24
+    },
+    {
+        "id": 6,
+        "nama": "Jamil Setiawan",
+        "nim": "A11.2024.00006",
+        "max_sks": 20
+    },
+    {
+        "id": 7,
+        "nama": "Wulan Saputra",
+        "nim": "A11.2024.00007",
+        "max_sks": 24
+    },
+    {
+        "id": 8,
+        "nama": "Fajar Saputra",
+        "nim": "A11.2024.00008",
+        "max_sks": 20
+    },
+    {
+        "id": 9,
+        "nama": "Lestari Kusuma",
+        "nim": "A11.2024.00009",
+        "max_sks": 24
+    },
+    {
+        "id": 10,
+        "nama": "Kartika Wijaya",
+        "nim": "A11.2024.00010",
+        "max_sks": 20
+    },
+    {
+        "id": 11,
+        "nama": "Sari Wijaya",
+        "nim": "A11.2024.00011",
+        "max_sks": 24
+    },
+    {
+        "id": 12,
+        "nama": "Dina Setiawan",
+        "nim": "A11.2024.00012",
+        "max_sks": 20
+    },
+    {
+        "id": 13,
+        "nama": "Joko Purnama",
+        "nim": "A11.2024.00013",
+        "max_sks": 24
+    },
+    {
+        "id": 14,
+        "nama": "Fitri Purnama",
+        "nim": "A11.2024.00014",
+        "max_sks": 20
+    },
+    {
+        "id": 15,
+        "nama": "Jamil Sari",
+        "nim": "A11.2024.00015",
+        "max_sks": 24
+    },
+    {
+        "id": 16,
+        "nama": "Lestari Kusuma",
+        "nim": "A11.2024.00016",
+        "max_sks": 20
+    },
+    {
+        "id": 17,
+        "nama": "Sari Lestari",
+        "nim": "A11.2024.00017",
+        "max_sks": 24
+    },
+    {
+        "id": 18,
+        "nama": "Intan Wijaya",
+        "nim": "A11.2024.00018",
+        "max_sks": 20
+    },
+    {
+        "id": 19,
+        "nama": "Joko Wijaya",
+        "nim": "A11.2024.00019",
+        "max_sks": 24
+    },
+    {
+        "id": 20,
+        "nama": "Hendra Hidayat",
+        "nim": "A11.2024.00020",
+        "max_sks": 20
+    },
+    {
+        "id": 21,
+        "nama": "Kartika Wijaya",
+        "nim": "A11.2024.00021",
+        "max_sks": 24
+    },
+    {
+        "id": 22,
+        "nama": "Intan Pratama",
+        "nim": "A11.2024.00022",
+        "max_sks": 20
+    },
+    {
+        "id": 23,
+        "nama": "Andi Rahman",
+        "nim": "A11.2024.00023",
+        "max_sks": 24
+    },
+    {
+        "id": 24,
+        "nama": "Eko Hidayat",
+        "nim": "A11.2024.00024",
+        "max_sks": 20
+    },
+    {
+        "id": 25,
+        "nama": "Agus Purnama",
+        "nim": "A11.2024.00025",
+        "max_sks": 24
+    },
+    {
+        "id": 26,
+        "nama": "Intan Pratama",
+        "nim": "A11.2024.00026",
+        "max_sks": 20
+    },
+    {
+        "id": 27,
+        "nama": "Hadi Wijaya",
+        "nim": "A11.2024.00027",
+        "max_sks": 24
+    },
+    {
+        "id": 28,
+        "nama": "Budi Pratama",
+        "nim": "A11.2024.00028",
+        "max_sks": 20
+    },
+    {
+        "id": 29,
+        "nama": "Sari Setiawan",
+        "nim": "A11.2024.00029",
+        "max_sks": 24
+    },
+    {
+        "id": 30,
+        "nama": "Dewi Saputra",
+        "nim": "A11.2024.00030",
+        "max_sks": 20
+    },
+    {
+        "id": 31,
+        "nama": "Fajar Wijaya",
+        "nim": "A11.2024.00031",
+        "max_sks": 24
+    },
+    {
+        "id": 32,
+        "nama": "Dina Wijaya",
+        "nim": "A11.2024.00032",
+        "max_sks": 20
+    },
+    {
+        "id": 33,
+        "nama": "Dewi Rahman",
+        "nim": "A11.2024.00033",
+        "max_sks": 24
+    },
+    {
+        "id": 34,
+        "nama": "Kartika Sari",
+        "nim": "A11.2024.00034",
+        "max_sks": 20
+    },
+    {
+        "id": 35,
+        "nama": "Putri Sari",
+        "nim": "A11.2024.00035",
+        "max_sks": 24
+    },
+    {
+        "id": 36,
+        "nama": "Sari Pratama",
+        "nim": "A11.2024.00036",
+        "max_sks": 20
+    },
+    {
+        "id": 37,
+        "nama": "Fajar Setiawan",
+        "nim": "A11.2024.00037",
+        "max_sks": 24
+    },
+    {
+        "id": 38,
+        "nama": "Galih Lestari",
+        "nim": "A11.2024.00038",
+        "max_sks": 20
+    },
+    {
+        "id": 39,
+        "nama": "Eko Sari",
+        "nim": "A11.2024.00039",
+        "max_sks": 24
+    },
+    {
+        "id": 40,
+        "nama": "Dewi Rahman",
+        "nim": "A11.2024.00040",
+        "max_sks": 20
+    },
+    {
+        "id": 41,
+        "nama": "Fajar Kusuma",
+        "nim": "A11.2024.00041",
+        "max_sks": 24
+    },
+    {
+        "id": 42,
+        "nama": "Kartika Rahman",
+        "nim": "A11.2024.00042",
+        "max_sks": 20
+    },
+    {
+        "id": 43,
+        "nama": "Rizki Pratama",
+        "nim": "A11.2024.00043",
+        "max_sks": 24
+    },
+    {
+        "id": 44,
+        "nama": "Kartika Rahman",
+        "nim": "A11.2024.00044",
+        "max_sks": 20
+    },
+    {
+        "id": 45,
+        "nama": "Joko Lestari",
+        "nim": "A11.2024.00045",
+        "max_sks": 24
+    },
+    {
+        "id": 46,
+        "nama": "Galih Kusuma",
+        "nim": "A11.2024.00046",
+        "max_sks": 20
+    },
+    {
+        "id": 47,
+        "nama": "Lestari Purnama",
+        "nim": "A11.2024.00047",
+        "max_sks": 24
+    },
+    {
+        "id": 48,
+        "nama": "Hendra Purnama",
+        "nim": "A11.2024.00048",
+        "max_sks": 20
+    },
+    {
+        "id": 49,
+        "nama": "Ira Pratama",
+        "nim": "A11.2024.00049",
+        "max_sks": 24
+    },
+    {
+        "id": 50,
+        "nama": "Eka Pratama",
+        "nim": "A11.2024.00050",
+        "max_sks": 20
+    },
+    {
+        "id": 51,
+        "nama": "Budi Hidayat",
+        "nim": "A11.2024.00051",
+        "max_sks": 24
+    },
+    {
+        "id": 52,
+        "nama": "Sari Wijaya",
+        "nim": "A11.2024.00052",
+        "max_sks": 20
+    },
+    {
+        "id": 53,
+        "nama": "Kartika Wijaya",
+        "nim": "A11.2024.00053",
+        "max_sks": 24
+    },
+    {
+        "id": 54,
+        "nama": "Wulan Setiawan",
+        "nim": "A11.2024.00054",
+        "max_sks": 20
+    },
+    {
+        "id": 55,
+        "nama": "Fajar Sari",
+        "nim": "A11.2024.00055",
+        "max_sks": 24
+    },
+    {
+        "id": 56,
+        "nama": "Fajar Lestari",
+        "nim": "A11.2024.00056",
+        "max_sks": 20
+    },
+    {
+        "id": 57,
+        "nama": "Tono Setiawan",
+        "nim": "A11.2024.00057",
+        "max_sks": 24
+    },
+    {
+        "id": 58,
+        "nama": "Eka Lestari",
+        "nim": "A11.2024.00058",
+        "max_sks": 20
+    },
+    {
+        "id": 59,
+        "nama": "Cahyo Hidayat",
+        "nim": "A11.2024.00059",
+        "max_sks": 24
+    },
+    {
+        "id": 60,
+        "nama": "Budi Hidayat",
+        "nim": "A11.2024.00060",
+        "max_sks": 20
+    },
+    {
+        "id": 61,
+        "nama": "Hadi Pratama",
+        "nim": "A11.2024.00061",
+        "max_sks": 24
+    },
+    {
+        "id": 62,
+        "nama": "Eko Sari",
+        "nim": "A11.2024.00062",
+        "max_sks": 20
+    },
+    {
+        "id": 63,
+        "nama": "Fitri Lestari",
+        "nim": "A11.2024.00063",
+        "max_sks": 24
+    },
+    {
+        "id": 64,
+        "nama": "Dina Purnama",
+        "nim": "A11.2024.00064",
+        "max_sks": 20
+    },
+    {
+        "id": 65,
+        "nama": "Lestari Saputra",
+        "nim": "A11.2024.00065",
+        "max_sks": 24
+    },
+    {
+        "id": 66,
+        "nama": "Wulan Rahman",
+        "nim": "A11.2024.00066",
+        "max_sks": 20
+    },
+    {
+        "id": 67,
+        "nama": "Fitri Sari",
+        "nim": "A11.2024.00067",
+        "max_sks": 24
+    },
+    {
+        "id": 68,
+        "nama": "Andi Setiawan",
+        "nim": "A11.2024.00068",
+        "max_sks": 20
+    },
+    {
+        "id": 69,
+        "nama": "Cahyo Hidayat",
+        "nim": "A11.2024.00069",
+        "max_sks": 24
+    },
+    {
+        "id": 70,
+        "nama": "Fajar Saputra",
+        "nim": "A11.2024.00070",
+        "max_sks": 20
+    },
+    {
+        "id": 71,
+        "nama": "Sari Lestari",
+        "nim": "A11.2024.00071",
+        "max_sks": 24
+    },
+    {
+        "id": 72,
+        "nama": "Eko Sari",
+        "nim": "A11.2024.00072",
+        "max_sks": 20
+    },
+    {
+        "id": 73,
+        "nama": "Sari Setiawan",
+        "nim": "A11.2024.00073",
+        "max_sks": 24
+    },
+    {
+        "id": 74,
+        "nama": "Putri Pratama",
+        "nim": "A11.2024.00074",
+        "max_sks": 20
+    },
+    {
+        "id": 75,
+        "nama": "Andi Lestari",
+        "nim": "A11.2024.00075",
+        "max_sks": 24
+    },
+    {
+        "id": 76,
+        "nama": "Dina Sari",
+        "nim": "A11.2024.00076",
+        "max_sks": 20
+    },
+    {
+        "id": 77,
+        "nama": "Gita Wijaya",
+        "nim": "A11.2024.00077",
+        "max_sks": 24
+    },
+    {
+        "id": 78,
+        "nama": "Dewi Hidayat",
+        "nim": "A11.2024.00078",
+        "max_sks": 20
+    },
+    {
+        "id": 79,
+        "nama": "Eko Pratama",
+        "nim": "A11.2024.00079",
+        "max_sks": 24
+    },
+    {
+        "id": 80,
+        "nama": "Eko Setiawan",
+        "nim": "A11.2024.00080",
+        "max_sks": 20
+    },
+    {
+        "id": 81,
+        "nama": "Niko Saputra",
+        "nim": "A11.2024.00081",
+        "max_sks": 24
+    },
+    {
+        "id": 82,
+        "nama": "Oka Purnama",
+        "nim": "A11.2024.00082",
+        "max_sks": 20
+    },
+    {
+        "id": 83,
+        "nama": "Kartika Rahman",
+        "nim": "A11.2024.00083",
+        "max_sks": 24
+    },
+    {
+        "id": 84,
+        "nama": "Fitri Purnama",
+        "nim": "A11.2024.00084",
+        "max_sks": 20
+    },
+    {
+        "id": 85,
+        "nama": "Bambang Saputra",
+        "nim": "A11.2024.00085",
+        "max_sks": 24
+    },
+    {
+        "id": 86,
+        "nama": "Wulan Saputra",
+        "nim": "A11.2024.00086",
+        "max_sks": 20
+    },
+    {
+        "id": 87,
+        "nama": "Hendra Purnama",
+        "nim": "A11.2024.00087",
+        "max_sks": 24
+    },
+    {
+        "id": 88,
+        "nama": "Agus Purnama",
+        "nim": "A11.2024.00088",
+        "max_sks": 20
+    },
+    {
+        "id": 89,
+        "nama": "Dina Setiawan",
+        "nim": "A11.2024.00089",
+        "max_sks": 24
+    },
+    {
+        "id": 90,
+        "nama": "Intan Saputra",
+        "nim": "A11.2024.00090",
+        "max_sks": 20
+    },
+    {
+        "id": 91,
+        "nama": "Gita Kusuma",
+        "nim": "A11.2024.00091",
+        "max_sks": 24
+    },
+    {
+        "id": 92,
+        "nama": "Galih Kusuma",
+        "nim": "A11.2024.00092",
+        "max_sks": 20
+    },
+    {
+        "id": 93,
+        "nama": "Kartika Hidayat",
+        "nim": "A11.2024.00093",
+        "max_sks": 24
+    },
+    {
+        "id": 94,
+        "nama": "Hadi Kusuma",
+        "nim": "A11.2024.00094",
+        "max_sks": 20
+    },
+    {
+        "id": 95,
+        "nama": "Hadi Hidayat",
+        "nim": "A11.2024.00095",
+        "max_sks": 24
+    },
+    {
+        "id": 96,
+        "nama": "Kartika Purnama",
+        "nim": "A11.2024.00096",
+        "max_sks": 20
+    },
+    {
+        "id": 97,
+        "nama": "Rizki Rahman",
+        "nim": "A11.2024.00097",
+        "max_sks": 24
+    },
+    {
+        "id": 98,
+        "nama": "Bambang Hidayat",
+        "nim": "A11.2024.00098",
+        "max_sks": 20
+    },
+    {
+        "id": 99,
+        "nama": "Budi Sari",
+        "nim": "A11.2024.00099",
+        "max_sks": 24
+    },
+    {
+        "id": 100,
+        "nama": "Fajar Wijaya",
+        "nim": "A11.2024.00100",
+        "max_sks": 20
+    }
+]

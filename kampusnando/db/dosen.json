@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "nama": "Dr. Budi Santoso",
+    "nidn": "0601018101",
+    "max_sks": 12
+  },
+  {
+    "id": 2,
+    "nama": "Prof. Siti Aminah",
+    "nidn": "0602028202",
+    "max_sks": 10
+  },
+  {
+    "id": 3,
+    "nama": "Eko Prasetyo, M.Kom.",
+    "nidn": "0603038303",
+    "max_sks": 12
+  },
+  {
+    "id": 4,
+    "nama": "Dosen Fiktif 1, S.Kom., M.Kom.",
+    "nidn": "060040001",
+    "max_sks": 10
+  },
+  {
+    "id": 5,
+    "nama": "Dosen Fiktif 2, S.Kom., M.Kom.",
+    "nidn": "060050002",
+    "max_sks": 12
+  },
+  {
+    "id": 6,
+    "nama": "Dosen Fiktif 3, S.Kom., M.Kom.",
+    "nidn": "060060003",
+    "max_sks": 10
+  },
+  {
+    "id": 7,
+    "nama": "Dosen Fiktif 4, S.Kom., M.Kom.",
+    "nidn": "060070004",
+    "max_sks": 12
+  },
+  {
+    "id": 8,
+    "nama": "Dosen Fiktif 5, S.Kom., M.Kom.",
+    "nidn": "060080005",
+    "max_sks": 10
+  },
+  {
+    "id": 9,
+    "nama": "Dosen Fiktif 6, S.Kom., M.Kom.",
+    "nidn": "060090006",
+    "max_sks": 12
+  },
+  {
+    "id": 10,
+    "nama": "Dosen Fiktif 7, S.Kom., M.Kom.",
+    "nidn": "060100007",
+    "max_sks": 10
+  },
+  {
+    "id": 11,
+    "nama": "Dosen Fiktif 8, S.Kom., M.Kom.",
+    "nidn": "060110008",
+    "max_sks": 12
+  },
+  {
+    "id": 12,
+    "nama": "Dosen Fiktif 9, S.Kom., M.Kom.",
+    "nidn": "060120009",
+    "max_sks": 10
+  },
+  {
+    "id": 13,
+    "nama": "Dosen Fiktif 10, S.Kom., M.Kom.",
+    "nidn": "060130010",
+    "max_sks": 12
+  },
+  {
+    "id": 14,
+    "nama": "Dosen Fiktif 11, S.Kom., M.Kom.",
+    "nidn": "060140011",
+    "max_sks": 10
+  },
+  {
+    "id": 15,
+    "nama": "Dosen Fiktif 12, S.Kom., M.Kom.",
+    "nidn": "060150012",
+    "max_sks": 12
+  },
+  {
+    "id": 16,
+    "nama": "Dosen Fiktif 13, S.Kom., M.Kom.",
+    "nidn": "060160013",
+    "max_sks": 10
+  },
+  {
+    "id": 17,
+    "nama": "Dosen Fiktif 14, S.Kom., M.Kom.",
+    "nidn": "060170014",
+    "max_sks": 12
+  },
+  {
+    "id": 18,
+    "nama": "Dosen Fiktif 15, S.Kom., M.Kom.",
+    "nidn": "060180015",
+    "max_sks": 10
+  },
+  {
+    "id": 19,
+    "nama": "Dosen Fiktif 16, S.Kom., M.Kom.",
+    "nidn": "060190016",
+    "max_sks": 12
+  },
+  {
+    "id": 20,
+    "nama": "Dosen Fiktif 17, S.Kom., M.Kom.",
+    "nidn": "060200017",
+    "max_sks": 10
+  },
+  {
+    "id": 21,
+    "nama": "Dosen Fiktif 18, S.Kom., M.Kom.",
+    "nidn": "060210018",
+    "max_sks": 12
+  },
+  {
+    "id": 22,
+    "nama": "Dosen Fiktif 19, S.Kom., M.Kom.",
+    "nidn": "060220019",
+    "max_sks": 10
+  },
+  {
+    "id": 23,
+    "nama": "Dosen Fiktif 20, S.Kom., M.Kom.",
+    "nidn": "060230020",
+    "max_sks": 12
+  },
+  {
+    "id": 24,
+    "nama": "Dosen Fiktif 21, S.Kom., M.Kom.",
+    "nidn": "060240021",
+    "max_sks": 10
+  },
+  {
+    "id": 25,
+    "nama": "Dosen Fiktif 22, S.Kom., M.Kom.",
+    "nidn": "060250022",
+    "max_sks": 12
+  },
+  {
+    "id": 26,
+    "nama": "Dosen Fiktif 23, S.Kom., M.Kom.",
+    "nidn": "060260023",
+    "max_sks": 10
+  },
+  {
+    "id": 27,
+    "nama": "Dosen Fiktif 24, S.Kom., M.Kom.",
+    "nidn": "060270024",
+    "max_sks": 12
+  },
+  {
+    "id": 28,
+    "nama": "Dosen Fiktif 25, S.Kom., M.Kom.",
+    "nidn": "060280025",
+    "max_sks": 10
+  },
+  {
+    "id": 29,
+    "nama": "Dosen Fiktif 26, S.Kom., M.Kom.",
+    "nidn": "060290026",
+    "max_sks": 12
+  },
+  {
+    "id": 30,
+    "nama": "Dosen Fiktif 27, S.Kom., M.Kom.",
+    "nidn": "060300027",
+    "max_sks": 10
+  },
+  {
+    "id": 31,
+    "nama": "Dosen Fiktif 28, S.Kom., M.Kom.",
+    "nidn": "060310028",
+    "max_sks": 12
+  },
+  {
+    "id": 32,
+    "nama": "Dosen Fiktif 29, S.Kom., M.Kom.",
+    "nidn": "060320029",
+    "max_sks": 10
+  },
+  {
+    "id": 33,
+    "nama": "Dosen Fiktif 30, S.Kom., M.Kom.",
+    "nidn": "060330030",
+    "max_sks": 12
+  },
+  {
+    "id": 34,
+    "nama": "Dosen Fiktif 31, S.Kom., M.Kom.",
+    "nidn": "060340031",
+    "max_sks": 10
+  },
+  {
+    "id": 35,
+    "nama": "Dosen Fiktif 32, S.Kom., M.Kom.",
+    "nidn": "060350032",
+    "max_sks": 12
+  },
+  {
+    "id": 36,
+    "nama": "Dosen Fiktif 33, S.Kom., M.Kom.",
+    "nidn": "060360033",
+    "max_sks": 10
+  },
+  {
+    "id": 37,
+    "nama": "Dosen Fiktif 34, S.Kom., M.Kom.",
+    "nidn": "060370034",
+    "max_sks": 12
+  },
+  {
+    "id": 38,
+    "nama": "Dosen Fiktif 35, S.Kom., M.Kom.",
+    "nidn": "060380035",
+    "max_sks": 10
+  },
+  {
+    "id": 39,
+    "nama": "Dosen Fiktif 36, S.Kom., M.Kom.",
+    "nidn": "060390036",
+    "max_sks": 12
+  },
+  {
+    "id": 40,
+    "nama": "Dosen Fiktif 37, S.Kom., M.Kom.",
+    "nidn": "060400037",
+    "max_sks": 10
+  },
+  {
+    "id": 41,
+    "nama": "Dosen Fiktif 38, S.Kom., M.Kom.",
+    "nidn": "060410038",
+    "max_sks": 12
+  },
+  {
+    "id": 42,
+    "nama": "Dosen Fiktif 39, S.Kom., M.Kom.",
+    "nidn": "060420039",
+    "max_sks": 10
+  },
+  {
+    "id": 43,
+    "nama": "Dosen Fiktif 40, S.Kom., M.Kom.",
+    "nidn": "060430040",
+    "max_sks": 12
+  },
+  {
+    "id": 44,
+    "nama": "Dosen Fiktif 41, S.Kom., M.Kom.",
+    "nidn": "060440041",
+    "max_sks": 10
+  },
+  {
+    "id": 45,
+    "nama": "Dosen Fiktif 42, S.Kom., M.Kom.",
+    "nidn": "060450042",
+    "max_sks": 12
+  },
+  {
+    "id": 46,
+    "nama": "Dosen Fiktif 43, S.Kom., M.Kom.",
+    "nidn": "060460043",
+    "max_sks": 10
+  },
+  {
+    "id": 47,
+    "nama": "Dosen Fiktif 44, S.Kom., M.Kom.",
+    "nidn": "060470044",
+    "max_sks": 12
+  },
+  {
+    "id": 48,
+    "nama": "Dosen Fiktif 45, S.Kom., M.Kom.",
+    "nidn": "060480045",
+    "max_sks": 10
+  },
+  {
+    "id": 49,
+    "nama": "Dosen Fiktif 46, S.Kom., M.Kom.",
+    "nidn": "060490046",
+    "max_sks": 12
+  },
+  {
+    "id": 50,
+    "nama": "Dosen Fiktif 47, S.Kom., M.Kom.",
+    "nidn": "060500047",
+    "max_sks": 10
+  },
+  {
+    "id": 51,
+    "nama": "Dosen Fiktif 48, S.Kom., M.Kom.",
+    "nidn": "060510048",
+    "max_sks": 12
+  },
+  {
+    "id": 52,
+    "nama": "Dosen Fiktif 49, S.Kom., M.Kom.",
+    "nidn": "060520049",
+    "max_sks": 10
+  },
+  {
+    "id": 53,
+    "nama": "Dosen Fiktif 50, S.Kom., M.Kom.",
+    "nidn": "060530050",
+    "max_sks": 12
+  }
+]
