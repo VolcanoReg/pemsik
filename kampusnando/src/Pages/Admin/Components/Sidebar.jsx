@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useAuthStateContext } from "@/Utils/Contexts/AuthContext";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   const { user } = useAuthStateContext();
 
   const hasPermission = (perm) => {
@@ -9,11 +9,11 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="bg-blue-800 text-white min-h-screen transition-all duration-300 w-20 lg:w-64">
-      <div className="p-4 border-b border-blue-700">
+    <aside className={`bg-blue-800 text-white min-h-screen transition-all duration-300 ${isOpen ? "w-20 lg:w-64" : "w-0 overflow-hidden"}`}>
+      <div className="p-4 border-b border-blue-700 whitespace-nowrap">
         <span className="text-2xl font-bold hidden lg:block">Admin</span>
       </div>
-      <nav className="p-4 space-y-2">
+      <nav className="p-4 space-y-2 whitespace-nowrap">
         <NavLink
           to="/admin/dashboard"
           className={({ isActive }) =>
