@@ -1,11 +1,19 @@
-import axios from "@/Utils/AxiosInstance";
+import { supabase } from "@/Utils/supabaseClient";
 
-export const login = async ( email, password ) => {
-    const res = await axios.get("/user", { params: { email } });
-    const user = res.data[0];
+export const login = async (email, password) => {
+  const { data, error } = await supabase
+    .from("users")
+    .select("*")
+    .eq("email", email)
+    .single();
 
-    if (!user) throw new Error("Email tidak ditemukan");
-    if (user.password !== password) throw new Error("Password salah");
+  if (error || !data) {
+    throw new Error("Email tidak ditemukan atau terjadi kesalahan");
+  }
 
-    return user;
+  if (data.password !== password) {
+    throw new Error("Password salah");
+  }
+
+  return data;
 };

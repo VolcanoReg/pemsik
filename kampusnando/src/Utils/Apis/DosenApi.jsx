@@ -1,16 +1,32 @@
-import axios from "@/Utils/AxiosInstance";
+import { supabase, handleRequest } from "@/Utils/supabaseClient";
 
 // Ambil semua dosen
-export const getAllDosen = (params = {}) => axios.get("/dosen", { params });
+export const getAllDosen = (params = {}) => handleRequest("dosen", params, ["nama", "nidn"]);
 
 // Ambil 1 dosen
-export const getDosen = (id) => axios.get(`/dosen/${id}`);
+export const getDosen = async (id) => {
+  const { data, error } = await supabase.from("dosen").select("*").eq("id", id).single();
+  if (error) throw error;
+  return { data };
+};
 
 // Tambah dosen
-export const storeDosen = (data) => axios.post("/dosen", data);
+export const storeDosen = async (payload) => {
+  const { data, error } = await supabase.from("dosen").insert(payload).select().single();
+  if (error) throw error;
+  return { data };
+};
 
 // Update dosen
-export const updateDosen = (id, data) => axios.put(`/dosen/${id}`, data);
+export const updateDosen = async (id, payload) => {
+  const { data, error } = await supabase.from("dosen").update(payload).eq("id", id).select().single();
+  if (error) throw error;
+  return { data };
+};
 
 // Hapus dosen
-export const deleteDosen = (id) => axios.delete(`/dosen/${id}`);
+export const deleteDosen = async (id) => {
+  const { data, error } = await supabase.from("dosen").delete().eq("id", id).select().single();
+  if (error) throw error;
+  return { data };
+};
